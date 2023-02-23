@@ -1,0 +1,2455 @@
+<!DOCTYPE html>
+	<html lang="es">
+		<head>
+			<meta charset="">
+			<title>Etiquetas de HTML</title>
+			<style type ="text/css">
+				
+				header {
+					width: 100%;
+					text-align: center;
+					color: #9462F8;
+					font-size: 22px;
+				}
+				section {
+					margin-left: 50px;
+					margin-right: 50px;
+					margin-top: 10px;
+					text-align: center;
+				}
+				article {
+					background-color: #D8D4DE;
+					border-radius: 20px;
+					padding: 15px;
+					margin-bottom: 20px;
+				}
+
+				article h1{
+					font-size: 22px;
+					text-align: left;
+					color: #9462F8;
+					
+				}
+				article h2{
+					font-size: 20px;
+					text-align: left;
+					margin-left: 60px;
+				}
+				article p{
+					font-size: 16px;
+					text-align: justify;
+					margin-left: 25px;
+					margin-right:25px;
+				}
+				
+				.ejemplo{
+					font-size: 12px;
+					background-color: black;
+					color: white;
+					text-align: left;
+					padding: 20px;
+					border-radius: 10px;
+				}
+				.contenedor{
+					max-width: 1200px;
+					margin: 0 auto;
+					
+				}
+				
+				footer{
+					width: 100%;
+					text-align: center;
+				}
+				
+			</style>
+		</head>
+		
+		<body>
+			<header><h1>Etiquetas de HTML</h1></header>
+			<div class="contenedor">
+			<section >
+				<ol>
+				<article>
+					<header><h1>Etiquetas de Estructuras Globales</h1></header>
+					
+					<h2><li>&lt;!DOCTYPE&gt;</li></h2>
+					<p><b>Descripción: </b>Esta etiqueta es utilizada para indicar el tipo de documento que se iniciará y la versión de html. Esta línea debe ser la primera línea del archivo, sin espacios o 
+						líneas que la precedan. De esta forma, el modo estándar del navegador es 
+						activado y las incorporaciones de HTML5 son interpretadas siempre que sea 
+						posible, o ignoradas en caso contrario.</p>
+					<b>Ejemplo de uso:</b><br>
+					<div class="ejemplo">
+						<p>&lt;!DOCTYPE html&gt;</p>
+					</div>
+					
+					<h2><li>&lt;html&gt;</li></h2>
+					<p><b>Descripción: </b>HTML usa un lenguaje de etiquetas para construir páginas 
+						web. Esta etiqueta es la raíz del archivo. Estas etiquetas HTML son palabras clave y atributos rodeados de los signos 
+						mayor y menor. La mayoría de las etiquetas 
+						HTML se utilizan en pares, una etiqueta de apertura y una de cierre, y el 
+						contenido se declara entre ellas.</p>
+					<b>Ejemplo de uso:</b><br>
+					<div class="ejemplo">
+						<p>&lt;!DOCTYPE html&gt;
+						<br>&lt;html&gt;
+						<br>
+						<br>&lt;/html&gt;</p>
+					</div>
+					
+					<h2><li>&lt;head&gt;</li></h2>
+					<p><b>Descripción: </b>Esta etiqueta es la cabecera del documento, engloba los metadatos. Dentro de estas etiquetas definiremos el título de nuestra 
+						página web, declararemos el set de caracteres correspondiente, proveeremos información 
+						general acerca del documento e incorporaremos los archivos externos con estilos, códigos 
+						Javascript o incluso imágenes necesarias para generar la página en la pantalla.</p>
+					<b>Ejemplo de uso:</b><br>
+					<div class="ejemplo">
+						<p>&lt;!DOCTYPE html&gt;
+						<br>&lt;html&gt;
+						<br>&lt;head&gt;
+						<br>	
+						<br>&lt;/head&gt;
+						<br>	
+						<br>&lt;/html&gt;</p>
+					</div>
+					
+					<h2><li>&lt;body&gt;</li></h2>
+					<p><b>Descripción: </b>Esta etiqueta es el cuerpo del documento. Es donde se colocan los elementos visibles de la página.</p>
+					<b>Ejemplo de uso:</b><br>
+					<div class="ejemplo">
+						<p>&lt;!DOCTYPE html&gt;
+						<br>&lt;html&gt;
+						<br>&lt;head&gt;
+						<br> 	
+						<br>&lt;/head&gt;
+						<br> 	
+						<br>&lt;body&gt;
+						<br> 	
+						<br>&lt;/body&gt;
+						<br>	
+						<br>&lt;/html&gt;</p>
+					</div>
+					
+					<h2><li>&lt;meta&gt;</li></h2>
+					<p><b>Descripción: </b>Esta etiqueta define el juego de caracteres a utilizar para mostrar el documento. Sirve para especificar como el texto sera presentado en pantalla.</p>
+					<b>Ejemplo de uso:</b><br>
+					<div class="ejemplo">
+						<p>&lt;!DOCTYPE html&gt;
+						<br>&lt;html&gt;
+						<br>&lt;head&gt;
+						<br>&lt;meta charset="iso-8859-1" /&gt;
+						<br>
+						<br>&lt;/head&gt;
+						<br>	
+						<br>&lt;/html&gt;</p>
+					</div>
+					
+					<h2><li>&lt;title&gt;</li></h2>
+					<p><b>Descripción: </b>Esta etiqueta especifica el título del documento. Este titulo sera visible en la ventana del navegador.</p>
+					<b>Ejemplo de uso:</b><br>
+					<div class="ejemplo">
+						<p>&lt;!DOCTYPE html&gt;
+						<br>&lt;html&gt;
+						<br>&lt;head&gt;
+						<br>&lt;meta charset="iso-8859-1" /&gt;
+						<br>&lt;title&gt; Título &lt;/title&gt;
+						<br>
+						<br>&lt;/head&gt;
+						<br>	
+						<br>&lt;/html&gt;</p>
+					</div>
+					
+					<h2><li>&lt;link&gt;</li></h2>
+					<p><b>Descripción: </b>Esta etiqueta se utiliza para incorporar estilos, códigos Javascript, imágenes o iconos de archivos externos.</p>
+					<b>Ejemplo de uso:</b><br>
+					<div class="ejemplo">
+						<p>&lt;!DOCTYPE html&gt;
+						<br>&lt;html&gt;
+						<br>&lt;head&gt;
+						<br>&lt;meta charset="iso-8859-1" /&gt;
+						<br>&lt;title&gt; Título &lt;/title&gt;
+						<br>&lt;link rel="stylesheet" href="misestilos.css"&gt;
+						<br>
+						<br>&lt;/head&gt;
+						<br>	
+						<br>&lt;/html&gt;</p>
+					</div>
+					
+					<h2><li>&lt;style&gt;</li></h2>
+					<p><b>Descripción: </b>Esta etiqueta se utiliza para introducir codigo CSS en line, es decir, en el propio documento HTML.</p>
+					<b>Ejemplo de uso:</b><br>
+					<div class="ejemplo">
+						<p>&lt;!DOCTYPE html&gt;
+						<br>&lt;html&gt;
+						<br>&lt;head&gt;
+						<br>&lt;meta charset="iso-8859-1" /&gt;
+						<br>&lt;title&gt; Título &lt;/title&gt;
+						<br>&lt;style&gt;
+						<br>body{
+						<br>background-color: black;
+						<br>margin: 0 auto;
+						<br>}
+						<br>&lt;/style&gt;
+						<br>
+						<br>&lt;/head&gt;
+						<br>	
+						<br>&lt;/html&gt;</p>
+					</div>
+				
+				</article>
+			
+				<article>
+					<header><h1>Etiquetas de Estructuras del cuerpo</h1></header>
+					
+					<h2><li>&lt;header&gt;</li></h2>
+					<p><b>Descripción: </b>Esta etiqueta es utilizada para colocar el titulo, subtitulos, logos, etc... Con el objetivo de mostrar información introductoria en el cuerpo del documento.</p>
+					<b>Ejemplo de uso:</b><br>
+					<div class="ejemplo">
+						<p>&lt;body&gt;
+						<br> 	
+						<br>&lt;header&gt; 	
+						<br>&lt;h1&gt;Título del documento&lt;/h1&gt;
+						<br>
+						<br>&lt;/header&gt;
+						<br>	
+						<br>&lt;/body&gt;</p>
+					</div>
+					
+					<h2><li>&lt;nav&gt;</li></h2>
+					<p><b>Descripción: </b>Esta etiqueta es utilizada para colocar una sección de una barra de navegación. Esta sección es creada para ayudar para la navegación, como son menús principales y bloques de enlaces. </p>
+					<b>Ejemplo de uso:</b><br>
+					<div class="ejemplo">
+						<p>&lt;body&gt;
+						<br> 	
+						<br>&lt;header&gt; 	
+						<br>&lt;h1&gt;Título del documento&lt;/h1&gt;
+						<br>&lt;/header&gt;
+						<br>&lt;nav&gt;
+						<br>&lt;ul&gt;
+						<br>&lt;li&gt;Inicio&lt;/li&gt;
+						<br>&lt;li&gt;Contacto&lt;/li&gt;
+						<br>&lt;li&gt;Nosotros&lt;/li&gt;
+						<br>&lt;/ul&gt;
+						<br>&lt;/nav&gt;
+						<br>	
+						<br>&lt;/body&gt;</p>
+					</div>
+					
+					<h2><li>&lt;section&gt;</li></h2>
+					<p><b>Descripción: </b>Esta etiqueta es utilizada para dividir el documento en diferentes secciones según su necesidad. </p>
+					<b>Ejemplo de uso:</b><br>
+					<div class="ejemplo">
+						<p>&lt;body&gt;
+						<br> 	
+						<br>&lt;header&gt; 	
+						<br>&lt;h1&gt;Título del documento&lt;/h1&gt;
+						<br>&lt;/header&gt;
+						<br>&lt;nav&gt;
+						<br>&lt;ul&gt;
+						<br>&lt;li&gt;Inicio&lt;/li&gt;
+						<br>&lt;li&gt;Contacto&lt;/li&gt;
+						<br>&lt;li&gt;Nosotros&lt;/li&gt;
+						<br>&lt;/ul&gt;
+						<br>&lt;/nav&gt;
+						<br>&lt;section&gt;
+						<br>
+						<br>&lt;/section&gt;
+						<br>	
+						<br>&lt;/body&gt;</p>
+					</div>
+					
+					<h2><li>&lt;main&gt;</li></h2>
+					<p><b>Descripción: </b>Esta etiqueta es utilizada para definir el contenido principal del documento. Solo puede existir uno por documento. </p>
+					<b>Ejemplo de uso:</b><br>
+					<div class="ejemplo">
+						<p>&lt;body&gt;
+						<br> 	
+						<br>&lt;header&gt; 	
+						<br>&lt;h1&gt;Título del documento&lt;/h1&gt;
+						<br>&lt;/header&gt;
+						<br>&lt;nav&gt;
+						<br>&lt;ul&gt;
+						<br>&lt;li&gt;Inicio&lt;/li&gt;
+						<br>&lt;li&gt;Contacto&lt;/li&gt;
+						<br>&lt;li&gt;Nosotros&lt;/li&gt;
+						<br>&lt;/ul&gt;
+						<br>&lt;/nav&gt;
+						<br>&lt;section&gt;
+						<br>&lt;main&gt;
+						<br>
+						<br>&lt;/main&gt;
+						<br>&lt;/section&gt;
+						<br>	
+						<br>&lt;/body&gt;</p>
+					</div>
+					
+					<h2><li>&lt;aside&gt;</li></h2>
+					<p><b>Descripción: </b>Esta etiqueta es utilizada para crear un barra lateral en el docuemnto. </p>
+					<b>Ejemplo de uso:</b><br>
+					<div class="ejemplo">
+						<p>&lt;body&gt;
+						<br> 	
+						<br>&lt;header&gt; 	
+						<br>&lt;h1&gt;Título del documento&lt;/h1&gt;
+						<br>&lt;/header&gt;
+						<br>&lt;nav&gt;
+						<br>&lt;ul&gt;
+						<br>&lt;li&gt;Inicio&lt;/li&gt;
+						<br>&lt;li&gt;Contacto&lt;/li&gt;
+						<br>&lt;li&gt;Nosotros&lt;/li&gt;
+						<br>&lt;/ul&gt;
+						<br>&lt;/nav&gt;
+						<br>&lt;section&gt;
+						<br>
+						<br>&lt;/section&gt;
+						<br>	
+						<br>&lt;aside&gt;
+						<br>&lt;blockquote&gt;Mensaje de Inicio&lt;/blockquote&gt;
+						<br>&lt;blockquote&gt;Mensaje de Contacto&lt;/blockquote&gt;
+						<br>&lt;blockquote&gt;Mensaje de Nosotros&lt;/blockquote&gt;
+						<br>&lt;/aside&gt;
+						<br>
+						<br>&lt;/body&gt;</p>
+					</div>
+					
+					<h2><li>&lt;footer&gt;</li></h2>
+					<p><b>Descripción: </b>Esta etiqueta es utilizada para finalizar la construcción del documento. Esta etiqueta se coloca al final del docuemto, creando una sección especial para el final, llamada institucional. </p>
+					<b>Ejemplo de uso:</b><br>
+					<div class="ejemplo">
+						<p>&lt;body&gt;
+						<br> 	
+						<br>&lt;header&gt; 	
+						<br>&lt;h1&gt;Título del documento&lt;/h1&gt;
+						<br>&lt;/header&gt;
+						<br>&lt;nav&gt;
+						<br>&lt;ul&gt;
+						<br>&lt;li&gt;Inicio&lt;/li&gt;
+						<br>&lt;li&gt;Contacto&lt;/li&gt;
+						<br>&lt;li&gt;Nosotros&lt;/li&gt;
+						<br>&lt;/ul&gt;
+						<br>&lt;/nav&gt;
+						<br>&lt;section&gt;
+						<br>
+						<br>&lt;/section&gt;
+						<br>	
+						<br>&lt;aside&gt;
+						<br>&lt;blockquote&gt;Mensaje de Inicio&lt;/blockquote&gt;
+						<br>&lt;blockquote&gt;Mensaje de Contacto&lt;/blockquote&gt;
+						<br>&lt;blockquote&gt;Mensaje de Nosotros&lt;/blockquote&gt;
+						<br>&lt;/aside&gt;
+						<br>
+						<br>&lt;footer&gt;
+						<br>Derechos Reservados copy; 2010-2011
+						<br>&lt;/footer&gt;
+						<br>&lt;/body&gt;</p>
+					</div>
+				</article>
+				
+				<article>
+					<header><h1>Etiquetas para dentro del cuerpo</h1></header>
+					
+					<h2><li>&lt;article&gt;</li></h2>
+					<p><b>Descripción: </b>Esta etiqueta nos permite identificar cada parte de los bloques que comparten similares características.</p>
+					<b>Ejemplo de uso:</b><br>
+					<div class="ejemplo">
+						<p>&lt;body&gt;
+						<br> 	
+						<br>&lt;header&gt; 	
+						<br>&lt;h1&gt;Título del documento&lt;/h1&gt;
+						<br>&lt;/header&gt;
+						<br>&lt;nav&gt;
+						<br>&lt;ul&gt;
+						<br>&lt;li&gt;Inicio&lt;/li&gt;
+						<br>&lt;li&gt;Contacto&lt;/li&gt;
+						<br>&lt;li&gt;Nosotros&lt;/li&gt;
+						<br>&lt;/ul&gt;
+						<br>&lt;/nav&gt;
+						<br>&lt;section&gt;
+						<br>
+						<br>&lt;article&gt;
+						<br>Contenido primer mensaje
+						<br>&lt;/article&gt;
+						<br>&lt;article&gt;
+						<br>Contenido segundo mensaje
+						<br>&lt;/article&gt;
+						<br>
+						<br>&lt;/section&gt;
+						<br>	
+						<br>&lt;aside&gt;
+						<br>&lt;blockquote&gt;Mensaje de Inicio&lt;/blockquote&gt;
+						<br>&lt;blockquote&gt;Mensaje de Contacto&lt;/blockquote&gt;
+						<br>&lt;blockquote&gt;Mensaje de Nosotros&lt;/blockquote&gt;
+						<br>&lt;/aside&gt;
+						<br>
+						<br>&lt;footer&gt;
+						<br>Derechos Reservados copy; 2010-2011
+						<br>&lt;/footer&gt;
+						<br>&lt;/body&gt;</p>
+					</div>
+					
+					<h2><li>&lt;h1&gt;, &lt;h2&gt;, &lt;h3&gt;, &lt;h4&gt;, &lt;h5&gt;, &lt;h6&gt;</li></h2>
+					<p><b>Descripción: </b>Son etiquetas HTML muy importantes, ya que son usadas para jerarquizar el contenido de la web. Las etiquetas se usan para explicar brevemente el contenido que irá a continuación.</p>
+					<b>Ejemplo de uso:</b><br>
+					<div class="ejemplo">
+						<p>&lt;body&gt;
+						<br> 	
+						<br>&lt;header&gt; 	
+						<br>	
+						<br>&lt;h1&gt;Título del documento&lt;/h1&gt;
+						<br>&lt;h2&gt;Subtítulo primero&lt;/h2&gt;
+						<br>&lt;h2&gt;Subtitulo segundo&lt;/h2&gt;
+						<br>
+						<br>&lt;/header&gt;
+						<br>&lt;nav&gt;
+						<br>&lt;ul&gt;
+						<br>&lt;li&gt;Inicio&lt;/li&gt;
+						<br>&lt;li&gt;Contacto&lt;/li&gt;
+						<br>&lt;li&gt;Nosotros&lt;/li&gt;
+						<br>&lt;/ul&gt;
+						<br>&lt;/nav&gt;
+						<br>&lt;section&gt;
+						<br>
+						<br>&lt;article&gt;
+						<br>Contenido primer mensaje
+						<br>&lt;/article&gt;
+						<br>&lt;article&gt;
+						<br>Contenido segundo mensaje
+						<br>&lt;/article&gt;
+						<br>
+						<br>&lt;/section&gt;
+						<br>	
+						<br>&lt;aside&gt;
+						<br>&lt;blockquote&gt;Mensaje de Inicio&lt;/blockquote&gt;
+						<br>&lt;blockquote&gt;Mensaje de Contacto&lt;/blockquote&gt;
+						<br>&lt;blockquote&gt;Mensaje de Nosotros&lt;/blockquote&gt;
+						<br>&lt;/aside&gt;
+						<br>
+						<br>&lt;footer&gt;
+						<br>Derechos Reservados copy; 2010-2011
+						<br>&lt;/footer&gt;
+						<br>&lt;/body&gt;</p>
+					</div>
+					
+					
+					<h2><li>&lt;hgroup&gt;</li></h2>
+					<p><b>Descripción: </b>Esta etiqueta nos permite agrupar las etiquetas de los títulos y subtitulos para que tengan mejor interpretación del documento por parte del navegador.</p>
+					<b>Ejemplo de uso:</b><br>
+					<div class="ejemplo">
+						<p>&lt;body&gt;
+						<br> 	
+						<br>&lt;header&gt; 	
+						<br>&lt;hgroup&gt; 	
+						<br>&lt;h1&gt;Título del documento&lt;/h1&gt;
+						<br>&lt;h2&gt;Subtítulo primero&lt;/h2&gt;
+						<br>&lt;h2&gt;Subtitulo segundo&lt;/h2&gt;
+						<br>&lt;/hgroup&gt;
+						<br>&lt;/header&gt;
+						<br>&lt;nav&gt;
+						<br>&lt;ul&gt;
+						<br>&lt;li&gt;Inicio&lt;/li&gt;
+						<br>&lt;li&gt;Contacto&lt;/li&gt;
+						<br>&lt;li&gt;Nosotros&lt;/li&gt;
+						<br>&lt;/ul&gt;
+						<br>&lt;/nav&gt;
+						<br>&lt;section&gt;
+						<br>
+						<br>&lt;article&gt;
+						<br>Contenido primer mensaje
+						<br>&lt;/article&gt;
+						<br>&lt;article&gt;
+						<br>Contenido segundo mensaje
+						<br>&lt;/article&gt;
+						<br>
+						<br>&lt;/section&gt;
+						<br>	
+						<br>&lt;aside&gt;
+						<br>&lt;blockquote&gt;Mensaje de Inicio&lt;/blockquote&gt;
+						<br>&lt;blockquote&gt;Mensaje de Contacto&lt;/blockquote&gt;
+						<br>&lt;blockquote&gt;Mensaje de Nosotros&lt;/blockquote&gt;
+						<br>&lt;/aside&gt;
+						<br>
+						<br>&lt;footer&gt;
+						<br>Derechos Reservados copy; 2010-2011
+						<br>&lt;/footer&gt;
+						<br>&lt;/body&gt;</p>
+					</div>
+					
+					<h2><li>&lt;tbody&gt;</li></h2>
+					<p><b>Descripción: </b>Esta etiqueta indica los bloques que forman parte del cuerpon de la tabla.</p>
+					<b>Ejemplo de uso:</b><br>
+					<div class="ejemplo">
+						<p>
+						<br>&lt;section&gt;
+						<br>
+						<br>&lt;article&gt;
+						<br>Contenido primer mensaje
+						<br>
+						<br>&lt;table&gt;
+						<br>&lt;caption&gt;
+						<br>Tabla de ejemplo
+						<br>&lt;/caption&gt;
+						<br>
+						<br>&lt;thead&gt;
+						<br>&lt;tr&gt;
+						<br>&lt;th&gt;Cuenta&lt;/th&gt;
+						<br>&lt;th&gt;segundo&lt;/th&gt;
+						<br>&lt;/tr&gt;
+						<br>&lt;/thead&gt;
+						<br>
+						<br>
+						<br>&lt;tbody&gt;
+						<br>&lt;tr&gt;
+						<br>&lt;td&gt;primero&lt;/td&gt;
+						<br>&lt;td&gt;40&lt;/td&gt;
+						<br>&lt;/tr&gt;
+						<br>&lt;tr&gt;
+						<br>&lt;td&gt;segundo&lt;/td&gt;
+						<br>&lt;td&gt;40&lt;/td&gt;
+						<br>&lt;/tr&gt;
+						<br>
+						<br>
+						<br>&lt;/tbody&gt;
+						<br>
+						<br>&lt;/tablet&gt;</p>
+					</div>
+					
+					<h2><li>&lt;dl&gt;</li></h2>
+					<p><b>Descripción: </b>Esta etiqueta se utiliza para crer una lista de definiciones.</p>
+					<b>Ejemplo de uso:</b><br>
+					<div class="ejemplo">
+						<p>&lt;body&gt;
+						<br> 	
+						<br>&lt;header&gt; 	
+						<br>&lt;hgroup&gt; 	
+						<br>&lt;h1&gt;Título del documento&lt;/h1&gt;
+						<br>&lt;h2&gt;Subtítulo primero&lt;/h2&gt;
+						<br>&lt;h2&gt;Subtitulo segundo&lt;/h2&gt;
+						<br>&lt;/hgroup&gt;
+						<br>&lt;/header&gt;
+						<br>&lt;section&gt;
+						<br>&lt;dl&gt;
+						<br>&lt;dt&gt;Inicio&lt;/dt&gt;
+						<br>&lt;dd&gt;Principio de alguna cosa.&lt;/dd&gt;
+						<br>&lt;dt&gt;Nosotros&lt;/dt&gt;
+						<br>&lt;dd&gt;Sección que habla solo la empresa que presenta la web.&lt;/dd&gt;
+						<br>&lt;/dl&gt;
+						<br>
+						<br>
+						<br>
+						<br>&lt;article&gt;
+						<br>Contenido primer mensaje
+						<br>&lt;/article&gt;
+						<br>&lt;article&gt;
+						<br>Contenido segundo mensaje
+						<br>&lt;/article&gt;
+						<br>
+						<br>&lt;/section&gt;
+						<br>	
+						<br>
+						<br>&lt;footer&gt;
+						<br>Derechos Reservados copy; 2010-2011
+						<br>&lt;/footer&gt;
+						<br>&lt;/body&gt;</p>
+					</div>
+					
+					<h2><li>&lt;dt&gt;</li></h2>
+					<p><b>Descripción: </b>Esta etiqueta representa un término definido por la etiqueta &lt;dd&gt;.</p>
+					<b>Ejemplo de uso:</b><br>
+					<div class="ejemplo">
+						<p>&lt;body&gt;
+						<br> 	
+						<br>&lt;header&gt; 	
+						<br>&lt;hgroup&gt; 	
+						<br>&lt;h1&gt;Título del documento&lt;/h1&gt;
+						<br>&lt;h2&gt;Subtítulo primero&lt;/h2&gt;
+						<br>&lt;h2&gt;Subtitulo segundo&lt;/h2&gt;
+						<br>&lt;/hgroup&gt;
+						<br>&lt;/header&gt;
+						<br>&lt;section&gt;
+						<br>&lt;dl&gt;
+						<br>&lt;dt&gt;Inicio&lt;/dt&gt;
+						<br>&lt;dd&gt;Principio de alguna cosa.&lt;/dd&gt;
+						<br>&lt;dt&gt;Nosotros&lt;/dt&gt;
+						<br>&lt;dd&gt;Sección que habla solo la empresa que presenta la web.&lt;/dd&gt;
+						<br>&lt;/dl&gt;
+						<br>
+						<br>
+						<br>
+						<br>&lt;article&gt;
+						<br>Contenido primer mensaje
+						<br>&lt;/article&gt;
+						<br>&lt;article&gt;
+						<br>Contenido segundo mensaje
+						<br>&lt;/article&gt;
+						<br>
+						<br>&lt;/section&gt;
+						<br>	
+						<br>
+						<br>&lt;footer&gt;
+						<br>Derechos Reservados copy; 2010-2011
+						<br>&lt;/footer&gt;
+						<br>&lt;/body&gt;</p>
+					</div>
+					
+					<h2><li>&lt;dd&gt;</li></h2>
+					<p><b>Descripción: </b>Esta etiqueta se utiliza para definir los términos listados antes que él.</p>
+					<b>Ejemplo de uso:</b><br>
+					<div class="ejemplo">
+						<p>&lt;body&gt;
+						<br> 	
+						<br>&lt;header&gt; 	
+						<br>&lt;hgroup&gt; 	
+						<br>&lt;h1&gt;Título del documento&lt;/h1&gt;
+						<br>&lt;h2&gt;Subtítulo primero&lt;/h2&gt;
+						<br>&lt;h2&gt;Subtitulo segundo&lt;/h2&gt;
+						<br>&lt;/hgroup&gt;
+						<br>&lt;/header&gt;
+						<br>&lt;section&gt;
+						<br>&lt;dl&gt;
+						<br>&lt;dt&gt;Inicio&lt;/dt&gt;
+						<br>&lt;dd&gt;Principio de alguna cosa.&lt;/dd&gt;
+						<br>&lt;dt&gt;Nosotros&lt;/dt&gt;
+						<br>&lt;dd&gt;Sección que habla solo la empresa que presenta la web.&lt;/dd&gt;
+						<br>&lt;/dl&gt;
+						<br>
+						<br>
+						<br>
+						<br>&lt;article&gt;
+						<br>Contenido primer mensaje
+						<br>&lt;/article&gt;
+						<br>&lt;article&gt;
+						<br>Contenido segundo mensaje
+						<br>&lt;/article&gt;
+						<br>
+						<br>&lt;/section&gt;
+						<br>	
+						<br>
+						<br>&lt;footer&gt;
+						<br>Derechos Reservados copy; 2010-2011
+						<br>&lt;/footer&gt;
+						<br>&lt;/body&gt;</p>
+					</div>
+					
+					<h2><li>&lt;small&gt;</li></h2>
+					<p><b>Descripción: </b>Esta etiqueta es para utilizarse para presentar textos con letras pequeñas.</p>
+					<b>Ejemplo de uso:</b><br>
+					<div class="ejemplo">
+						<p>
+						<br>&lt;section&gt;
+						<br>
+						<br>&lt;article&gt;
+						<br>Contenido primer mensaje
+						<br>&lt;/article&gt;
+						<br>
+						<br>&lt;/section&gt;
+						<br>
+						<br>&lt;footer&gt;
+						<br>&lt;small&gt; Derechos reservados&lt;/small&gt;
+						<br>
+						<br>&lt;/footer&gt;</p>
+					</div>
+					
+					<h2><li>&lt;figure&gt;</li></h2>
+					<p><b>Descripción: </b>Esta etiqueta nos permite identificar contenidos del documento como ilustraciones, videos, fotos, etc...</p>
+					<b>Ejemplo de uso:</b><br>
+					<div class="ejemplo">
+						<p>
+						<br>&lt;section&gt;
+						<br>
+						<br>&lt;article&gt;
+						<br>Contenido primer mensaje
+						<br>&lt;figure&gt;
+						<br>&lt;img src="mifoto.jpg"&gt;
+						<br>&lt;figcaption&gt;
+						<br>Primera imagen.
+						<br>&lt;/figcaption&gt;
+						<br>&lt;/figure&gt;
+						<br>&lt;/article&gt;
+						<br>&lt;article&gt;
+						<br>Contenido segundo mensaje
+						<br>&lt;/article&gt;
+						<br>
+						<br>&lt;/section&gt;</p>
+					</div>
+					
+					<h2><li>&lt;figcaption&gt;</li></h2>
+					<p><b>Descripción: </b>Esta etiqueta se utiliza para definir la leyenda de una figura.</p>
+					<b>Ejemplo de uso:</b><br>
+					<div class="ejemplo">
+						<p>
+						<br>&lt;section&gt;
+						<br>
+						<br>&lt;article&gt;
+						<br>Contenido primer mensaje
+						<br>&lt;figure&gt;
+						<br>&lt;img src="mifoto.jpg"&gt;
+						<br>&lt;figcaption&gt;
+						<br>Primera imagen.
+						<br>&lt;/figcaption&gt;
+						<br>&lt;/figure&gt;
+						<br>&lt;/article&gt;
+						<br>&lt;article&gt;
+						<br>Contenido segundo mensaje
+						<br>&lt;/article&gt;
+						<br>
+						<br>&lt;/section&gt;</p>
+					</div>
+					
+					<h2><li>&lt;blockquote&gt;</li></h2>
+					<p><b>Descripción: </b>Esta etiqueta es utilizada para indicar que el contenido es texto citado. </p>
+					<b>Ejemplo de uso:</b><br>
+					<div class="ejemplo">
+						<p>&lt;body&gt;
+						<br> 	
+						<br>&lt;header&gt; 	
+						<br>&lt;h1&gt;Título del documento&lt;/h1&gt;
+						<br>&lt;/header&gt;
+						<br>&lt;nav&gt;
+						<br>&lt;ul&gt;
+						<br>&lt;li&gt;Inicio&lt;/li&gt;
+						<br>&lt;li&gt;Contacto&lt;/li&gt;
+						<br>&lt;li&gt;Nosotros&lt;/li&gt;
+						<br>&lt;/ul&gt;
+						<br>&lt;/nav&gt;
+						<br>&lt;section&gt;
+						<br>
+						<br>&lt;/section&gt;
+						<br>	
+						<br>&lt;aside&gt;
+						<br>&lt;blockquote&gt;Mensaje de Inicio&lt;/blockquote&gt;
+						<br>&lt;blockquote&gt;Mensaje de Contacto&lt;/blockquote&gt;
+						<br>&lt;blockquote&gt;Mensaje de Nosotros&lt;/blockquote&gt;
+						<br>&lt;/aside&gt;
+						<br>
+						<br>&lt;/body&gt;</p>
+					</div>
+					
+					<h2><li>&lt;ol&gt;</li></h2>
+					<p><b>Descripción: </b>Esta etiqueta es para hacer una lista ordenada.</p>
+					<b>Ejemplo de uso:</b><br>
+					<div class="ejemplo">
+						<p>
+						<br>&lt;section&gt;
+						<br>
+						<br>&lt;article&gt;
+						<br>Contenido primer mensaje
+						<br>&lt;ol&gt;
+						<br>&lt;li&gt;primero&lt;/li&gt;
+						<br>&lt;li&gt;segundo&lt;/li&gt;
+						<br>&lt;li&gt;tercero&lt;/li&gt;
+						<br>&lt;li&gt;cuarto&lt;/li&gt;
+						<br>&lt;li&gt;quinto&lt;/li&gt;
+						<br>&lt;/ol&gt;
+						<br>&lt;/article&gt;
+						<br>
+						<br>&lt;/section&gt;</p>
+					</div>
+					
+					<h2><li>&lt;ul&gt;</li></h2>
+					<p><b>Descripción: </b>Esta etiqueta es para hacer una lista sin un orden.</p>
+					<b>Ejemplo de uso:</b><br>
+					<div class="ejemplo">
+						<p>
+						<br>&lt;section&gt;
+						<br>
+						<br>&lt;article&gt;
+						<br>Contenido primer mensaje
+						<br>&lt;ul&gt;
+						<br>&lt;li&gt;primero&lt;/li&gt;
+						<br>&lt;li&gt;segundo&lt;/li&gt;
+						<br>&lt;li&gt;tercero&lt;/li&gt;
+						<br>&lt;li&gt;cuarto&lt;/li&gt;
+						<br>&lt;li&gt;quinto&lt;/li&gt;
+						<br>&lt;/ul&gt;
+						<br>&lt;/article&gt;
+						<br>
+						<br>&lt;/section&gt;</p>
+					</div>
+					
+					<h2><li>&lt;li&gt;</li></h2>
+					<p><b>Descripción: </b>Esta etiqueta recogen el contenido de un elemento de una lista.</p>
+					<b>Ejemplo de uso:</b><br>
+					<div class="ejemplo">
+						<p>
+						<br>&lt;section&gt;
+						<br>
+						<br>&lt;article&gt;
+						<br>Contenido primer mensaje
+						<br>&lt;ul&gt;
+						<br>&lt;li&gt;primero&lt;/li&gt;
+						<br>&lt;li&gt;segundo&lt;/li&gt;
+						<br>&lt;li&gt;tercero&lt;/li&gt;
+						<br>&lt;li&gt;cuarto&lt;/li&gt;
+						<br>&lt;li&gt;quinto&lt;/li&gt;
+						<br>&lt;/ul&gt;
+						<br>&lt;/article&gt;
+						<br>
+						<br>&lt;/section&gt;</p>
+					</div>
+					
+					<h2><li>&lt;object&gt;</li></h2>
+					<p><b>Descripción: </b>Esta etiqueta es utilizada para llamar a un recurso externo de la web. Este recurso sera tratado como una imagen, o un recurso externo para ser procesado por un plugin.</p>
+					<b>Ejemplo de uso:</b><br>
+					<div class="ejemplo">
+						<p>
+						<br>&lt;section&gt;
+						<br>
+						<br>&lt;article&gt;
+						<br>Contenido primer mensaje
+						<br>
+						<br>&lt;object type="application/pdf" width="250" height="200" data="/media/examples/In-CC0.pdf" &gt;
+						<br>&lt;/object&gt;
+						<br>
+						<br>
+						<br>&lt;/article&gt;
+						<br>
+						<br>&lt;/section&gt;</p>
+					</div>
+					
+					<h2><li>&lt;video&gt;</li></h2>
+					<p><b>Descripción: </b>Esta etiqueta es utilizada para reproducir video en la página web junto a sus archivos de audio y capciones asociadas.</p>
+					<b>Ejemplo de uso:</b><br>
+					<div class="ejemplo">
+						<p>
+						<br>&lt;section&gt;
+						<br>
+						<br>&lt;article&gt;
+						<br>Contenido primer mensaje
+						<br>
+						<br>&lt;video src="videofile.ogg" autoplay poster="posterimage.jpg"&gt;
+						<br>Tu navegador no admite el elemento &lt;code&gt;video&lt;/code&gt;.
+						<br>&lt;/video&gt;
+						<br>
+						<br>
+						<br>&lt;/article&gt;
+						<br>
+						<br>&lt;/section&gt;</p>
+					</div>
+					
+					<h2><li>&lt;img&gt;</li></h2>
+					<p><b>Descripción: </b>Esta etiqueta es para pintar una imagen en la página web.</p>
+					<b>Ejemplo de uso:</b><br>
+					<div class="ejemplo">
+						<p>
+						<br>&lt;section&gt;
+						<br>
+						<br>&lt;article&gt;
+						<br>Contenido primer mensaje
+						<br>
+						<br>&lt;img src="imagen.jpg"&gt;
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>&lt;/article&gt;
+						<br>
+						<br>&lt;/section&gt;</p>
+					</div>
+					
+					<h2><li>&lt;audio&gt;</li></h2>
+					<p><b>Descripción: </b>Esta etiqueta es utilizada para cargar a una web un archivo de audio o stream de audio.</p>
+					<b>Ejemplo de uso:</b><br>
+					<div class="ejemplo">
+						<p>
+						<br>&lt;section&gt;
+						<br>
+						<br>&lt;article&gt;
+						<br>Contenido primer mensaje
+						<br>
+						<br>&lt;audio src="audiotest_(1).ogg" autoplay&gt;
+						<br>Tu navegador no admite el elemento &lt;code&gt;audio&lt;/code&gt;.
+						<br>&lt;/audio&gt;
+						<br>
+						<br>
+						<br>&lt;/article&gt;
+						<br>
+						<br>&lt;/section&gt;</p>
+					</div>
+					
+					<h2><li>&lt;mark&gt;</li></h2>
+					<p><b>Descripción: </b>Esta etiqueta es para resaltar palabras.</p>
+					<b>Ejemplo de uso:</b><br>
+					<div class="ejemplo">
+						<p>
+						<br>&lt;section&gt;
+						<br>
+						<br>&lt;article&gt;
+						<br>Contenido primer mensaje
+						<br>
+						<br>&lt;mark&gt;primero&lt;/mark&gt;
+						<br>&lt;/article&gt;
+						<br>
+						<br>&lt;/section&gt;</p>
+					</div>
+					
+					<h2><li>&lt;em&gt;</li></h2>
+					<p><b>Descripción: </b>Esta etiqueta es para indicar énfasis.</p>
+					<b>Ejemplo de uso:</b><br>
+					<div class="ejemplo">
+						<p>
+						<br>&lt;section&gt;
+						<br>
+						<br>&lt;article&gt;
+						<br>Contenido primer mensaje
+						<br>
+						<br>&lt;em&gt;primero&lt;/em&gt;
+						<br>
+						<br>&lt;/article&gt;
+						<br>
+						<br>&lt;/section&gt;</p>
+					</div>
+					
+					<h2><li>&lt;strong&gt;</li></h2>
+					<p><b>Descripción: </b>Esta etiqueta es para indicar importancia.</p>
+					<b>Ejemplo de uso:</b><br>
+					<div class="ejemplo">
+						<p>
+						<br>&lt;section&gt;
+						<br>
+						<br>&lt;article&gt;
+						<br>Contenido primer mensaje
+						<br>
+						<br>&lt;strong&gt;primero&lt;/strong&gt;
+						<br>
+						<br>&lt;/article&gt;
+						<br>
+						<br>&lt;/section&gt;</p>
+					</div>
+					
+					<h2><li>&lt;b&gt;</li></h2>
+					<p><b>Descripción: </b>Esta etiqueta es para resaltar palabras en negritas, debería ser usado solo cuando no hay otro elemento para la situación.</p>
+					<b>Ejemplo de uso:</b><br>
+					<div class="ejemplo">
+						<p>
+						<br>&lt;section&gt;
+						<br>
+						<br>&lt;article&gt;
+						<br>Contenido primer mensaje
+						<br>
+						<br>&lt;b&gt;primero&lt;/b&gt;
+						<br>
+						<br>&lt;/article&gt;
+						<br>
+						<br>&lt;/section&gt;</p>
+					</div>
+					
+					<h2><li>&lt;article&gt;</li></h2>
+					<p><b>Descripción: </b>Esta etiqueta nos permite identificar cada parte de los bloques que comparten similares características.</p>
+					<b>Ejemplo de uso:</b><br>
+					<div class="ejemplo">
+						<p>&lt;body&gt;
+						<br> 	
+						<br>&lt;header&gt; 	
+						<br>&lt;h1&gt;Título del documento&lt;/h1&gt;
+						<br>&lt;/header&gt;
+						<br>&lt;nav&gt;
+						<br>&lt;ul&gt;
+						<br>&lt;li&gt;Inicio&lt;/li&gt;
+						<br>&lt;li&gt;Contacto&lt;/li&gt;
+						<br>&lt;li&gt;Nosotros&lt;/li&gt;
+						<br>&lt;/ul&gt;
+						<br>&lt;/nav&gt;
+						<br>&lt;section&gt;
+						<br>
+						<br>&lt;article&gt;
+						<br>Contenido primer mensaje
+						<br>&lt;/article&gt;
+						<br>&lt;article&gt;
+						<br>Contenido segundo mensaje
+						<br>&lt;/article&gt;
+						<br>
+						<br>&lt;/section&gt;
+						<br>	
+						<br>&lt;aside&gt;
+						<br>&lt;blockquote&gt;Mensaje de Inicio&lt;/blockquote&gt;
+						<br>&lt;blockquote&gt;Mensaje de Contacto&lt;/blockquote&gt;
+						<br>&lt;blockquote&gt;Mensaje de Nosotros&lt;/blockquote&gt;
+						<br>&lt;/aside&gt;
+						<br>
+						<br>&lt;footer&gt;
+						<br>Derechos Reservados copy; 2010-2011
+						<br>&lt;/footer&gt;
+						<br>&lt;/body&gt;</p>
+					</div>
+					
+					<h2><li>&lt;small&gt;</li></h2>
+					<p><b>Descripción: </b>Esta etiqueta es para utilizarse para presentar textos con letras pequeñas.</p>
+					<b>Ejemplo de uso:</b><br>
+					<div class="ejemplo">
+						<p>
+						<br>&lt;section&gt;
+						<br>
+						<br>&lt;article&gt;
+						<br>Contenido primer mensaje
+						<br>&lt;/article&gt;
+						<br>
+						<br>&lt;/section&gt;
+						<br>
+						<br>&lt;footer&gt;
+						<br>&lt;small&gt; Derechos reservados&lt;/small&gt;
+						<br>
+						<br>&lt;/footer&gt;</p>
+					</div>
+					
+					<h2><li>&lt;cite&gt;</li></h2>
+					<p><b>Descripción: </b>Esta etiqueta es para encerrar el título de un trabajo, pelicula, canción, etc...</p>
+					<b>Ejemplo de uso:</b><br>
+					<div class="ejemplo">
+						<p>
+						<br>&lt;section&gt;
+						<br>
+						<br>&lt;article&gt;
+						<br>Contenido primer mensaje
+						<br>
+						<br>Canción &lt;cite&gt;Canto a mi Patria&lt;/cite&gt;
+						<br>
+						<br>
+						<br>&lt;/article&gt;
+						<br>
+						<br>&lt;/section&gt;</p>
+					</div>
+					
+					<h2><li>&lt;abbr&gt;</li></h2>
+					<p><b>Descripción: </b>Esta etiqueta representa una abreviación o acrónimo.</p>
+					<b>Ejemplo de uso:</b><br>
+					<div class="ejemplo">
+						<p>
+						<br>&lt;section&gt;
+						<br>
+						<br>&lt;article&gt;
+						<br>Contenido primer mensaje
+						<br>
+						<br>&lt;abbr title="Hypertext Markup Language"&gt;HTML&lt;/abbr&gt;
+						<br>&lt;/article&gt;
+						<br>
+						<br>&lt;/section&gt;</p>
+					</div>
+					
+					<h2><li>&lt;acronym&gt;</li></h2>
+					<p><b>Descripción: </b>Esta etiqueta representa un acrónimo.</p>
+					<b>Ejemplo de uso:</b><br>
+					<div class="ejemplo">
+						<p>
+						<br>&lt;section&gt;
+						<br>
+						<br>&lt;article&gt;
+						<br>Contenido primer mensaje
+						<br>
+						<br>&lt;acronym lang="en" title="Asynchronous JavaScript and XML"&gt;Ajax&lt;/acronym&gt;
+						<br>&lt;/article&gt;
+						<br>
+						<br>&lt;/section&gt;</p>
+					</div>
+					
+					<h2><li>&lt;acronym&gt;</li></h2>
+					<p><b>Descripción: </b>Esta etiqueta permite añadir un applet Java en un documento HTML.</p>
+					<b>Ejemplo de uso:</b><br>
+					<div class="ejemplo">
+						<p>
+						<br>&lt;section&gt;
+						<br>
+						<br>&lt;article&gt;
+						<br>Contenido primer mensaje
+						<br>
+						<br>&lt;applet code="loquesea.class" width="500" height="500"&gt; &lt;/applet&gt;
+						<br>&lt;/article&gt;
+						<br>
+						<br>&lt;/section&gt;</p>
+					</div>
+					
+					<h2><li>&lt;svg&gt;</li></h2>
+					<p><b>Descripción: </b>Esta etiqueta se usa para llamar a una imagen vectorizada.</p>
+					<b>Ejemplo de uso:</b><br>
+					<div class="ejemplo">
+						<p>
+						<br>&lt;section&gt;
+						<br>
+						<br>&lt;article&gt;
+						<br>Contenido primer mensaje
+						<br>
+						<br>&lt;svg width="100" height="100"&gt;
+						<br>&lt;circle cx="50" cy="50" r="40" stroke="green" stroke-width="4" fill="yellow" /&gt;
+						<br>&lt;/svg&gt;
+						<br>
+						<br>
+						<br>&lt;/article&gt;
+						<br>
+						<br>&lt;/section&gt;</p>
+					</div>
+					
+					<h2><li>&lt;area&gt;</li></h2>
+					<p><b>Descripción: </b>Esta etiqueta sirve para crear las distintas secciones en las que se puede dividir un mapas de imágenes en el cliente.</p>
+					<b>Ejemplo de uso:</b><br>
+					<div class="ejemplo">
+						<p>
+						<br>&lt;map name="map1"&gt; 
+						<br>
+						<br>&lt;area href="http://www.mozilla.com/firefox/" alt="El navegador" shape="rect" coords="0,0,60,155"&gt;
+						<br>&lt;area href="http://www.mozilla.com/thunderbird/" alt="El gestor de correo" shape="rect" coords="75,0,135,155"&gt;
+						<br>
+						<br>&lt;/map&gt;</p>
+					</div>
+					
+					<h2><li>&lt;map&gt;</li></h2>
+					<p><b>Descripción: </b>Esta etiqueta es una etiqueta de contenedor que indica el comienzo y el final de la descripción del mapa de imagen.</p>
+					<b>Ejemplo de uso:</b><br>
+					<div class="ejemplo">
+						<p>
+						<br>&lt;map name="map1"&gt; 
+						<br>
+						<br>&lt;area href="http://www.mozilla.com/firefox/" alt="El navegador" shape="rect" coords="0,0,60,155"&gt;
+						<br>&lt;area href="http://www.mozilla.com/thunderbird/" alt="El gestor de correo" shape="rect" coords="75,0,135,155"&gt;
+						<br>
+						<br>&lt;/map&gt;</p>
+					</div>
+					
+					<h2><li>&lt;base&gt;</li></h2>
+					<p><b>Descripción: </b>Esta etiqueta especifica la dirección URL base que se utilizará para todas las direcciones URL relativas contenidas dentro de un documento. Sólo puede haber un elemento base en un documento.</p>
+					<b>Ejemplo de uso:</b><br>
+					<div class="ejemplo">
+						<p>
+						<br>&lt;base target="_blank" href="http://www.example.com/page.html"&gt; </p>
+					</div>
+					
+					<h2><li>&lt;address&gt;</li></h2>
+					<p><b>Descripción: </b>Esta etiqueta es un viejo elemento convertido en un elemento estructural. No 
+						necesitamos usarlo previamente para construir nuestra plantilla, sin embargo podría 
+						ubicarse perfectamente en algunas situaciones en las que debemos presentar información 
+						de contacto relacionada con el contenido del elemento &lt;article&gt; o el cuerpo completo. </p>
+					<b>Ejemplo de uso:</b><br>
+					<div class="ejemplo">
+						<p>
+						<br>&lt;section&gt;
+						<br>
+						<br>&lt;article&gt;
+						<br>Contenido primer mensaje
+						<br>&lt;/article&gt;
+						<br>&lt;/section&gt;
+						<br>
+						<br>&lt;footer&gt;
+						<br>&lt;address&gt;
+						<br>&lt;a href=”http://www.jdgauchat.com” &lt; JD Gauchat &lt;/a&gt; 
+						<br>&lt;/address&gt;
+						<br>
+						<br>&lt;/footer&gt;</p>
+					</div>
+					
+					<h2><li>&lt;bdi&gt;</li></h2>
+					<p><b>Descripción: </b>Esta etiqueta aisla un trozo de texto para que pueda ser formateado con una dirección diferente al texto que hay fuera de él.</p>
+					<b>Ejemplo de uso:</b><br>
+					<div class="ejemplo">
+						<p>
+						<br>&lt;section&gt;
+						<br>
+						<br>&lt;p&gt;
+						<br>Contenido primer mensaje &lt;bdi&gt; aislar&lt;/bdi&gt;
+						<br>&lt;/p&gt;
+						<br>
+						<br>&lt;/section&gt;</p>
+					</div>
+					
+					<h2><li>&lt;time&gt;</li></h2>
+					<p><b>Descripción: </b>Esta etiqueta nos permite declarar un texto comprensible para humanos y navegadores que representa fecha y hora.</p>
+					<b>Ejemplo de uso:</b><br>
+					<div class="ejemplo">
+						<p>
+						<br>&lt;article&gt;
+						<br>
+						<br>&lt;header&gt;
+						<br>&lt;h1&gt;Titulo primer mensaje&lt;/h1&gt;
+						<br>
+						<br>&lt;time datetime="2023-02-20" pubdate&gt;Publicado el 20-02-2023&lt;/time&gt;
+						<br>
+						<br>
+						<br>&lt;/header&gt;
+						<br>
+						<br>&lt;/article&gt;</p>
+					</div>
+					
+					<h2><li>&lt;br&gt;</li></h2>
+					<p><b>Descripción: </b>Esta etiqueta es para hacer un salto de linea en el documento.</p>
+					<b>Ejemplo de uso:</b><br>
+					<div class="ejemplo">
+						<p>
+						<br>&lt;section&gt;
+						<br>
+						<br>&lt;article&gt;
+						<br>Contenido primer mensaje
+						<br>
+						<br>Canción &lt;br&gt;Canto a mi Patria
+						<br>
+						<br>
+						<br>&lt;/article&gt;
+						<br>
+						<br>&lt;/section&gt;</p>
+					</div>
+					
+					<h2><li>&lt;wbr&gt;</li></h2>
+					<p><b>Descripción: </b>Esta etiqueta es para hacer un posible salto de linea en el documento.</p>
+					<b>Ejemplo de uso:</b><br>
+					<div class="ejemplo">
+						<p>
+						<br>&lt;section&gt;
+						<br>
+						<br>&lt;article&gt;
+						<br>Contenido primer mensaje
+						<br>
+						<br>Canción &lt;wbr&gt;Canto a mi Patria
+						<br>
+						<br>
+						<br>&lt;/article&gt;
+						<br>
+						<br>&lt;/section&gt;</p>
+					</div>
+					
+					<h2><li>&lt;p&gt;</li></h2>
+					<p><b>Descripción: </b>Esta etiqueta es para hacer un párrafo en el documento.</p>
+					<b>Ejemplo de uso:</b><br>
+					<div class="ejemplo">
+						<p>
+						<br>&lt;section&gt;
+						<br>
+						<br>&lt;article&gt;
+						<br>Contenido primer mensaje
+						<br>
+						<br>&lt;p&gt; Canción Canto a mi Patria&lt;/p&gt;
+						<br>
+						<br>
+						<br>&lt;/article&gt;
+						<br>
+						<br>&lt;/section&gt;</p>
+					</div>
+					
+					<h2><li>&lt;pre&gt;</li></h2>
+					<p><b>Descripción: </b>Esta etiqueta es utilizada para pegar texto manteniendo el pre formato propio del texto copiado.</p>
+					<b>Ejemplo de uso:</b><br>
+					<div class="ejemplo">
+						<p>
+						<br>&lt;section&gt;
+						<br>
+						<br>&lt;article&gt;
+						<br>Contenido primer mensaje
+						<br>
+						<br>&lt;pre&gt; Canción Canto a mi Patria&lt;/pre&gt;
+						<br>
+						<br>
+						<br>&lt;/article&gt;
+						<br>
+						<br>&lt;/section&gt;</p>
+					</div>
+					
+					<h2><li>&lt;div&gt;</li></h2>
+					<p><b>Descripción: </b>Esta etiqueta es utilizada para crear un contenedor genérico.</p>
+					<b>Ejemplo de uso:</b><br>
+					<div class="ejemplo">
+						<p>
+						<br>&lt;section&gt;
+						<br>
+						<br>&lt;article&gt;
+						<br>Contenido primer mensaje
+						<br>
+						<br>&lt;div&gt; Canción Canto a mi Patria&lt;/div&gt;
+						<br>
+						<br>
+						<br>&lt;/article&gt;
+						<br>
+						<br>&lt;/section&gt;</p>
+					</div>
+					
+					<h2><li>&lt;a&gt;</li></h2>
+					<p><b>Descripción: </b>Esta etiqueta es para crear hiperenlaces en el docuemnto HTML.</p>
+					<b>Ejemplo de uso:</b><br>
+					<div class="ejemplo">
+						<p>
+						<br>&lt;section&gt;
+						<br>
+						<br>&lt;article&gt;
+						<br>Contenido primer mensaje
+						<br>
+						<br>&lt;a href="https://www.youtube.com/watch?v=FrMH7budsxw"&gt; Canción Canto a mi Patria&lt;/a&gt;
+						<br>
+						<br>
+						<br>&lt;/article&gt;
+						<br>
+						<br>&lt;/section&gt;</p>
+					</div>
+					
+					<h2><li>&lt;span&gt;</li></h2>
+					<p><b>Descripción: </b>Esta etiqueta se usan para conjuntamente para atributos class y id, para atribuirle ciertas características.</p>
+					<b>Ejemplo de uso:</b><br>
+					<div class="ejemplo">
+						<p>
+						<br>&lt;section&gt;
+						<br>
+						<br>&lt;article&gt;
+						<br>Contenido primer mensaje
+						<br>
+						<br>&lt;a href="https://www.youtube.com/watch?v=FrMH7budsxw"&gt; Canción Canto a mi Patria&lt;/a&gt;
+						<br>
+						<br>
+						<br>&lt;/article&gt;
+						<br>
+						<br>&lt;/section&gt;</p>
+					</div>
+					
+					<h2><li>&lt;map&gt;</li></h2>
+					<p><b>Descripción: </b>Esta etiqueta es una etiqueta de contenedor que indica el comienzo y el final de la descripción del mapa de imagen.</p>
+					<b>Ejemplo de uso:</b><br>
+					<div class="ejemplo">
+						<p>
+						<br>&lt;map name="map1"&gt; 
+						<br>
+						<br>&lt;area href="http://www.mozilla.com/firefox/" alt="El navegador" shape="rect" coords="0,0,60,155"&gt;
+						<br>&lt;area href="http://www.mozilla.com/thunderbird/" alt="El gestor de correo" shape="rect" coords="75,0,135,155"&gt;
+						<br>
+						<br>&lt;/map&gt;</p>
+					</div>
+					
+					<h2><li>&lt;hr&gt;</li></h2>
+					<p><b>Descripción: </b>Esta etiqueta se usa para romper secciones de una web. Usada como separador.</p>
+					<b>Ejemplo de uso:</b><br>
+					<div class="ejemplo">
+						<p>
+						<br>&lt;section&gt;
+						<br>
+						<br>&lt;article&gt;
+						<br>Contenido primer mensaje
+						<br>
+						<br>&lt;hr&gt; Canción Canto a mi Patria
+						<br>
+						<br>
+						<br>&lt;/article&gt;
+						<br>
+						<br>&lt;/section&gt;</p>
+					</div>
+					
+					<h2><li>&lt;sub&gt; y &lt;sup&gt;</li></h2>
+					<p><b>Descripción: </b>Estas etiquetas son utilizadas para representar un subindice o superindice.</p>
+					<b>Ejemplo de uso:</b><br>
+					<div class="ejemplo">
+						<p>
+						<br>&lt;section&gt;
+						<br>
+						<br>&lt;article&gt;
+						<br>Contenido primer mensaje
+						<br>
+						<br>&lt;sub&gt; Canción Canto a mi Patria&lt;/sub&gt;
+						<br>
+						<br>
+						<br>&lt;/article&gt;
+						<br>
+						<br>&lt;/section&gt;</p>
+					</div>
+					
+					<h2><li>&lt;img&gt;</li></h2>
+					<p><b>Descripción: </b>Esta etiqueta es para pintar una imagen en la página web.</p>
+					<b>Ejemplo de uso:</b><br>
+					<div class="ejemplo">
+						<p>
+						<br>&lt;section&gt;
+						<br>
+						<br>&lt;article&gt;
+						<br>Contenido primer mensaje
+						<br>
+						<br>&lt;img src="imagen.jpg"&gt;
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>&lt;/article&gt;
+						<br>
+						<br>&lt;/section&gt;</p>
+					</div>
+					
+					<h2><li>&lt;code&gt;</li></h2>
+					<p><b>Descripción: </b>Esta etiqueta es utilizada para insertar codigo de programa de ordenador.</p>
+					<b>Ejemplo de uso:</b><br>
+					<div class="ejemplo">
+						<p>
+						<br>&lt;section&gt;
+						<br>
+						<br>&lt;article&gt;
+						<br>Contenido primer mensaje
+						<br>
+						<br>&lt;video src="videofile.ogg" autoplay poster="posterimage.jpg"&gt;
+						<br>Tu navegador no admite el elemento &lt;code&gt;video&lt;/code&gt;.
+						<br>&lt;/video&gt;
+						<br>
+						<br>
+						<br>&lt;/article&gt;
+						<br>
+						<br>&lt;/section&gt;</p>
+					</div>
+				
+				</article>
+				
+				<article>
+					<header><h1>Etiquetas</h1></header>
+					
+					<h2><li>&lt;form&gt;</li></h2>
+					<p><b>Descripción: </b>Esta etiqueta es de apertura y cierre de un formulario de una página web. El resto de etiquetas del formulario deben ir siempre dentro de estas etiquetas de apertura y cierre de formulario.</p>
+					<b>Ejemplo de uso:</b><br>
+					<div class="ejemplo">
+						<p>
+						<br>&lt;section&gt;
+						<br>
+						<br>&lt;article&gt;
+						<br>Contenido primer mensaje
+						<br>
+						<br>&lt;form &gt;
+						<br>
+						<br>&lt;/form&gt;
+						<br>
+						<br>
+						<br>&lt;/article&gt;
+						<br>
+						<br>&lt;/section&gt;</p>
+					</div>
+					
+					<h2><li>&lt;fieldset&gt;</li></h2>
+					<p><b>Descripción: </b>Esta etiqueta representa un conjunto o agrupación de elementos de un formulario. Pinta un recuadro al rederor de las etiquetas que estén contenidas dentro del esta etiqueta.</p>
+					<b>Ejemplo de uso:</b><br>
+					<div class="ejemplo">
+						<p>
+						<br>&lt;section&gt;
+						<br>
+						<br>&lt;article&gt;
+						<br>Contenido primer mensaje
+						<br>
+						<br>&lt;form action="" method="post"&gt;
+						<br>&lt;fieldset&gt;
+						<br>&lt;legend&gt;Título&lt;/legend&gt;
+						<br>&lt;input type="radio" name="radio" id="radio"&gt; &lt;label for="radio"&gt; Click &lt;/label&gt;
+						<br>&lt;/fieldset&gt;
+						<br>&lt;/form&gt;
+						<br>
+						<br>&lt;/article&gt;
+						<br>
+						<br>&lt;/section&gt;</p>
+					</div>
+					
+					<h2><li>&lt;legend&gt;</li></h2>
+					<p><b>Descripción: </b>Esta etiqueta indica el título dentro de una etiqueta fieldset.</p>
+					<b>Ejemplo de uso:</b><br>
+					<div class="ejemplo">
+						<p>
+						<br>&lt;section&gt;
+						<br>
+						<br>&lt;article&gt;
+						<br>Contenido primer mensaje
+						<br>
+						<br>&lt;form action="" method="post"&gt;
+						<br>&lt;fieldset&gt;
+						<br>&lt;legend&gt;Título&lt;/legend&gt;
+						<br>&lt;input type="radio" name="radio" id="radio"&gt; &lt;label for="radio"&gt; Click &lt;/label&gt;
+						<br>&lt;/fieldset&gt;
+						<br>&lt;/form&gt;
+						<br>
+						<br>&lt;/article&gt;
+						<br>
+						<br>&lt;/section&gt;</p>
+					</div>
+					
+					<h2><li>&lt;label&gt;</li></h2>
+					<p><b>Descripción: </b>Esta etiqueta se usa para definir el nombre o titulo de un control del formulario.</p>
+					<b>Ejemplo de uso:</b><br>
+					<div class="ejemplo">
+						<p>
+						<br>&lt;section&gt;
+						<br>
+						<br>&lt;article&gt;
+						<br>Contenido primer mensaje
+						<br>
+						<br>&lt;form action="" method="post"&gt;
+						<br>&lt;fieldset&gt;
+						<br>&lt;legend&gt;Título&lt;/legend&gt;
+						<br>&lt;input type="radio" name="radio" id="radio"&gt; &lt;label for="radio"&gt; Click &lt;/label&gt;
+						<br>&lt;/fieldset&gt;
+						<br>&lt;/form&gt;
+						<br>
+						<br>&lt;/article&gt;
+						<br>
+						<br>&lt;/section&gt;</p>
+					</div>
+					
+					<h2><li>&lt;input&gt;</li></h2>
+					<p><b>Descripción: </b>Esta etiqueta pinta un campo de introducción de datos para el usuario. Es de las principales etiquetas de un formulaio.</p>
+					<b>Ejemplo de uso:</b><br>
+					<div class="ejemplo">
+						<p>
+						<br>&lt;section&gt;
+						<br>
+						<br>&lt;article&gt;
+						<br>Contenido primer mensaje
+						<br>
+						<br>&lt;form action="" method="post"&gt;
+						<br>&lt;fieldset&gt;
+						<br>&lt;legend&gt;Título&lt;/legend&gt;
+						<br>&lt;input type="radio" name="radio" id="radio"&gt; &lt;label for="radio"&gt; Click &lt;/label&gt;
+						<br>&lt;/fieldset&gt;
+						<br>&lt;/form&gt;
+						<br>
+						<br>&lt;/article&gt;
+						<br>
+						<br>&lt;/section&gt;</p>
+					</div>
+					
+					<h2><li>&lt;button&gt;</li></h2>
+					<p><b>Descripción: </b>Esta etiqueta es utilizada para representar un botón en el formulario.</p>
+					<b>Ejemplo de uso:</b><br>
+					<div class="ejemplo">
+						<p>
+						<br>&lt;section&gt;
+						<br>
+						<br>&lt;article&gt;
+						<br>Contenido primer mensaje
+						<br>
+						<br>&lt;form action="" method="post"&gt;
+						<br>&lt;fieldset&gt;
+						<br>&lt;legend&gt;Título&lt;/legend&gt;
+						<br>&lt;input type="radio" name="radio" id="radio"&gt; &lt;label for="radio"&gt; Click &lt;/label&gt;
+						<br>&lt;button name="button"&gt;Enviar&lt;/button&gt;
+						<br>&lt;/fieldset&gt;
+						<br>&lt;/form&gt;
+						<br>
+						<br>&lt;/article&gt;
+						<br>
+						<br>&lt;/section&gt;</p>
+					</div>
+					
+					<h2><li>&lt;select&gt;</li></h2>
+					<p><b>Descripción: </b>Esta etiqueta es un input que permite una selección entre un conjunto de opciones.</p>
+					<b>Ejemplo de uso:</b><br>
+					<div class="ejemplo">
+						<p>
+						<br>&lt;section&gt;
+						<br>
+						<br>&lt;article&gt;
+						<br>Contenido primer mensaje
+						<br>
+						<br>&lt;form action="" method="post"&gt;
+						<br>&lt;fieldset&gt;
+						<br>&lt;legend&gt;Título&lt;/legend&gt;
+						<br>&lt;select name="select" &gt; 
+						<br>&lt;option value="value1" &gt; Pimero&lt;/option&gt;
+						<br>&lt;option value="value2" selected&gt; Segunda&lt;/option&gt;
+						<br>&lt;option value="value3"&gt; Tercera&lt;/option&gt;
+						<br>&lt;/select&gt;
+						<br>&lt;button name="button"&gt;Enviar&lt;/button&gt;
+						<br>&lt;/fieldset&gt;
+						<br>&lt;/form&gt;
+						<br>
+						<br>&lt;/article&gt;
+						<br>
+						<br>&lt;/section&gt;</p>
+					</div>
+					
+						<h2><li>&lt;optgroup&gt;</li></h2>
+					<p><b>Descripción: </b>Esta etiqueta es un grupo de opciones en una caja de lista</p>
+					<b>Ejemplo de uso:</b><br>
+					<div class="ejemplo">
+						<p>
+						<br>&lt;section&gt;
+						<br>
+						<br>&lt;article&gt;
+						<br>Contenido primer mensaje
+						<br>
+						<br>&lt;form action="" method="post"&gt;
+						<br>&lt;fieldset&gt;
+						<br>&lt;legend&gt;Título&lt;/legend&gt;
+						<br>&lt;select name="select" &gt; 
+						<br>&lt;optgroup label="opcion 1" &gt; 
+						<br>&lt;option value="value1" &gt; Pimero&lt;/option&gt;
+						<br>&lt;option value="value2"&gt; Segunda&lt;/option&gt;
+						<br>&lt;option value="value3"&gt; Tercera&lt;/option&gt;
+						<br>&lt;/optgroup&gt; 
+						<br>&lt;optgroup label="opcion 2" &gt; 
+						<br>&lt;option value="value4" &gt; Nuevo&lt;/option&gt;
+						<br>&lt;option value="value5"&gt; Viejo&lt;/option&gt;
+						<br>&lt;option value="value6"&gt; Usado&lt;/option&gt;
+						<br>&lt;/optgroup&gt;
+						<br>&lt;/select&gt;
+						<br>&lt;button name="button"&gt;Enviar&lt;/button&gt;
+						<br>&lt;/fieldset&gt;
+						<br>&lt;/form&gt;
+						<br>
+						<br>&lt;/article&gt;
+						<br>
+						<br>&lt;/section&gt;</p>
+					</div>
+					
+					<h2><li>&lt;option&gt;</li></h2>
+					<p><b>Descripción: </b>Esta etiqueta permite añadir diferentes opciones al menu de la etiqueta select.</p>
+					<b>Ejemplo de uso:</b><br>
+					<div class="ejemplo">
+						<p>
+						<br>&lt;section&gt;
+						<br>
+						<br>&lt;article&gt;
+						<br>Contenido primer mensaje
+						<br>
+						<br>&lt;form action="" method="post"&gt;
+						<br>&lt;fieldset&gt;
+						<br>&lt;legend&gt;Título&lt;/legend&gt;
+						<br>&lt;select name="select" &gt; 
+						<br>&lt;option value="value1" &gt; Pimero&lt;/option&gt;
+						<br>&lt;option value="value2" selected&gt; Segunda&lt;/option&gt;
+						<br>&lt;option value="value3"&gt; Tercera&lt;/option&gt;
+						<br>&lt;button name="button"&gt;Enviar&lt;/button&gt;
+						<br>&lt;/select&gt;
+						<br>&lt;/fieldset&gt;
+						<br>&lt;/form&gt;
+						<br>
+						<br>&lt;/article&gt;
+						<br>
+						<br>&lt;/section&gt;</p>
+					</div>
+					
+					<h2><li>&lt;textarea&gt;</li></h2>
+					<p><b>Descripción: </b>Esta etiqueta añade un campo al usuario para que pueda introducir texto en unas lineas máximas de texto que el desarrollador puede definir.</p>
+					<b>Ejemplo de uso:</b><br>
+					<div class="ejemplo">
+						<p>
+						<br>&lt;section&gt;
+						<br>
+						<br>&lt;article&gt;
+						<br>Contenido primer mensaje
+						<br>
+						<br>&lt;form action="" method="post"&gt;
+						<br>&lt;fieldset&gt;
+						<br>&lt;legend&gt;Título&lt;/legend&gt;
+						<br>&lt;textarea name="textarea" rows="10" cols="50"&gt; Escribe aqui un comentario&lt;/textarea&gt;
+						<br>&lt;/fieldset&gt;
+						<br>&lt;/form&gt;
+						<br>
+						<br>&lt;/article&gt;
+						<br>
+						<br>&lt;/section&gt;</p>
+					</div>
+					
+					
+				</article>
+		
+				
+				<article>
+					<header><h1>Etiquetas para crear una tabla</h1></header>
+					
+					<h2><li>&lt;table&gt;</li></h2>
+					<p><b>Descripción: </b>Esta etiqueta es para indicar el inicio y final de una tabla.</p>
+					<b>Ejemplo de uso:</b><br>
+					<div class="ejemplo">
+						<p>
+						<br>&lt;section&gt;
+						<br>
+						<br>&lt;article&gt;
+						<br>Contenido primer mensaje
+						<br>
+						<br>&lt;table&gt;
+						<br>
+						<br>&lt;/table&gt;
+						<br>
+						<br>
+						<br>&lt;/article&gt;
+						<br>
+						<br>&lt;/section&gt;</p>
+					</div>
+					
+					<h2><li>&lt;caption&gt;</li></h2>
+					<p><b>Descripción: </b>Esta etiqueta es para indicar el título de la tabla.</p>
+					<b>Ejemplo de uso:</b><br>
+					<div class="ejemplo">
+						<p>
+						<br>&lt;section&gt;
+						<br>
+						<br>&lt;article&gt;
+						<br>Contenido primer mensaje
+						<br>
+						<br>&lt;table&gt;
+						<br>&lt;caption&gt;
+						<br>Tabla de ejemplo
+						<br>&lt;/caption&gt;
+						<br>
+						<br>&lt;/table&gt;
+						<br>
+						<br>
+						<br>&lt;/article&gt;
+						<br>
+						<br>&lt;/section&gt;</p>
+					</div>
+					
+					<h2><li>&lt;tr&gt;</li></h2>
+					<p><b>Descripción: </b>Esta etiqueta es para indicar una fila de celdas de una tabla</p>
+					<b>Ejemplo de uso:</b><br>
+					<div class="ejemplo">
+						<p>
+						<br>&lt;section&gt;
+						<br>
+						<br>&lt;article&gt;
+						<br>Contenido primer mensaje
+						<br>
+						<br>&lt;table&gt;
+						<br>&lt;caption&gt;
+						<br>Tabla de ejemplo
+						<br>&lt;/caption&gt;
+						<br>
+						<br>&lt;tr&gt;
+						<br>
+						<br>&lt;/tr&gt;
+						<br>&lt;/table&gt;
+						<br>
+						<br>
+						<br>&lt;/article&gt;
+						<br>
+						<br>&lt;/section&gt;</p>
+					</div>
+					
+					<h2><li>&lt;tr&gt;</li></h2>
+					<p><b>Descripción: </b>Esta etiqueta es para indicar una fila de celdas de una tabla</p>
+					<b>Ejemplo de uso:</b><br>
+					<div class="ejemplo">
+						<p>
+						<br>&lt;section&gt;
+						<br>
+						<br>&lt;article&gt;
+						<br>Contenido primer mensaje
+						<br>
+						<br>&lt;table&gt;
+						<br>&lt;caption&gt;
+						<br>Tabla de ejemplo
+						<br>&lt;/caption&gt;
+						<br>
+						<br>&lt;tr&gt;
+						<br>
+						<br>&lt;/tr&gt;
+						<br>&lt;/table&gt;
+						<br>
+						<br>
+						<br>&lt;/article&gt;
+						<br>
+						<br>&lt;/section&gt;</p>
+					</div>
+					
+					<h2><li>&lt;td&gt;</li></h2>
+					<p><b>Descripción: </b>Esta etiqueta es para definir una celda de una tabla.</p>
+					<b>Ejemplo de uso:</b><br>
+					<div class="ejemplo">
+						<p>
+						<br>&lt;section&gt;
+						<br>
+						<br>&lt;article&gt;
+						<br>Contenido primer mensaje
+						<br>
+						<br>&lt;table&gt;
+						<br>&lt;caption&gt;
+						<br>Tabla de ejemplo
+						<br>&lt;/caption&gt;
+						<br>
+						<br>&lt;tr&gt;
+						<br>&lt;td&gt;
+						<br>Primero
+						<br>&lt;/td&gt;
+						<br>&lt;td&gt;
+						<br>Segunda
+						<br>&lt;/td&gt;
+						<br>&lt;/tr&gt;
+						<br>&lt;/table&gt;
+						<br>
+						<br>
+						<br>&lt;/article&gt;
+						<br>
+						<br>&lt;/section&gt;</p>
+					</div>
+					
+					<h2><li>&lt;thead&gt;</li></h2>
+					<p><b>Descripción: </b>Esta etiqueta indica el bloque de fila que describe las etiquetas de las columnas de la tabla.</p>
+					<b>Ejemplo de uso:</b><br>
+					<div class="ejemplo">
+						<p>
+						<br>&lt;section&gt;
+						<br>
+						<br>&lt;article&gt;
+						<br>Contenido primer mensaje
+						<br>
+						<br>&lt;table&gt;
+						<br>&lt;caption&gt;
+						<br>Tabla de ejemplo
+						<br>&lt;/caption&gt;
+						<br>
+						<br>&lt;thead&gt;
+						<br>&lt;tr&gt;
+						<br>&lt;th&gt;
+						<br>Primero
+						<br>&lt;/th&gt;
+						<br>&lt;th&gt;
+						<br>Segunda
+						<br>&lt;/th&gt;
+						<br>&lt;/tr&gt;
+						<br>&lt;/thead&gt;
+						<br>&lt;/table&gt;
+						<br>
+						<br>
+						<br>&lt;/article&gt;
+						<br>
+						<br>&lt;/section&gt;</p>
+					</div>
+					
+					<h2><li>&lt;th&gt;</li></h2>
+					<p><b>Descripción: </b>Esta etiqueta se usa para definir el encabezado de una celda.</p>
+					<b>Ejemplo de uso:</b><br>
+					<div class="ejemplo">
+						<p>
+						<br>&lt;section&gt;
+						<br>
+						<br>&lt;article&gt;
+						<br>Contenido primer mensaje
+						<br>
+						<br>&lt;table&gt;
+						<br>&lt;caption&gt;
+						<br>Tabla de ejemplo
+						<br>&lt;/caption&gt;
+						<br>
+						<br>&lt;thead&gt;
+						<br>&lt;tr&gt;
+						<br>&lt;th&gt;
+						<br>Primero
+						<br>&lt;/th&gt;
+						<br>&lt;th&gt;
+						<br>Segunda
+						<br>&lt;/th&gt;
+						<br>&lt;/tr&gt;
+						<br>&lt;/thead&gt;
+						<br>&lt;/table&gt;
+						<br>
+						<br>
+						<br>&lt;/article&gt;
+						<br>
+						<br>&lt;/section&gt;</p>
+					</div>
+					
+					<h2><li>&lt;th&gt;</li></h2>
+					<p><b>Descripción: </b>Esta etiqueta se usa para definir el encabezado de una celda.</p>
+					<b>Ejemplo de uso:</b><br>
+					<div class="ejemplo">
+						<p>
+						<br>&lt;section&gt;
+						<br>
+						<br>&lt;article&gt;
+						<br>Contenido primer mensaje
+						<br>
+						<br>&lt;table&gt;
+						<br>&lt;caption&gt;
+						<br>Tabla de ejemplo
+						<br>&lt;/caption&gt;
+						<br>
+						<br>&lt;thead&gt;
+						<br>&lt;tr&gt;
+						<br>&lt;th&gt;
+						<br>Primero
+						<br>&lt;/th&gt;
+						<br>&lt;th&gt;
+						<br>Segunda
+						<br>&lt;/th&gt;
+						<br>&lt;/tr&gt;
+						<br>&lt;/thead&gt;
+						<br>&lt;/table&gt;
+						<br>
+						<br>
+						<br>&lt;/article&gt;
+						<br>
+						<br>&lt;/section&gt;</p>
+					</div>
+					
+					<h2><li>&lt;tbody&gt;</li></h2>
+					<p><b>Descripción: </b>Esta etiqueta indica los bloques que forman parte del cuerpon de la tabla.</p>
+					<b>Ejemplo de uso:</b><br>
+					<div class="ejemplo">
+						<p>
+						<br>&lt;section&gt;
+						<br>
+						<br>&lt;article&gt;
+						<br>Contenido primer mensaje
+						<br>
+						<br>&lt;table&gt;
+						<br>&lt;caption&gt;
+						<br>Tabla de ejemplo
+						<br>&lt;/caption&gt;
+						<br>
+						<br>&lt;thead&gt;
+						<br>&lt;tr&gt;
+						<br>&lt;th&gt;Cuenta&lt;/th&gt;
+						<br>&lt;th&gt;segundo&lt;/th&gt;
+						<br>&lt;/tr&gt;
+						<br>&lt;/thead&gt;
+						<br>
+						<br>
+						<br>&lt;tbody&gt;
+						<br>&lt;tr&gt;
+						<br>&lt;td&gt;primero&lt;/td&gt;
+						<br>&lt;td&gt;40&lt;/td&gt;
+						<br>&lt;/tr&gt;
+						<br>&lt;tr&gt;
+						<br>&lt;td&gt;segundo&lt;/td&gt;
+						<br>&lt;td&gt;40&lt;/td&gt;
+						<br>&lt;/tr&gt;
+						<br>
+						<br>
+						<br>&lt;/tbody&gt;
+						<br>
+						<br>&lt;/tablet&gt;</p>
+					</div>
+					
+					<h2><li>&lt;tfoot&gt;</li></h2>
+					<p><b>Descripción: </b>Esta etiqueta indica los bloques de filas que describen los resumenes, o datos totales de una columna de la tabla.</p>
+					<b>Ejemplo de uso:</b><br>
+					<div class="ejemplo">
+						<p>
+						<br>&lt;section&gt;
+						<br>
+						<br>&lt;article&gt;
+						<br>Contenido primer mensaje
+						<br>
+						<br>&lt;table&gt;
+						<br>&lt;caption&gt;
+						<br>Tabla de ejemplo
+						<br>&lt;/caption&gt;
+						<br>
+						<br>&lt;thead&gt;
+						<br>&lt;tr&gt;
+						<br>&lt;th&gt;Cuenta&lt;/th&gt;
+						<br>&lt;th&gt;segundo&lt;/th&gt;
+						<br>&lt;/tr&gt;
+						<br>&lt;/thead&gt;
+						<br>
+						<br>&lt;tr&gt;
+						<br>&lt;td&gt;primero&lt;/td&gt;
+						<br>&lt;td&gt;40&lt;/td&gt;
+						<br>&lt;/tr&gt;
+						<br>&lt;tr&gt;
+						<br>&lt;td&gt;segundo&lt;/td&gt;
+						<br>&lt;td&gt;40&lt;/td&gt;
+						<br>&lt;/tr&gt;
+						<br>
+						<br>&lt;tfoot&gt;
+						<br>&lt;tr&gt;
+						<br>
+						<br>&lt;td&gt;Suma&lt;/td&gt;
+						<br>&lt;td&gt;80&lt;/td&gt;
+						<br>&lt;/tr&gt;
+						<br>
+						<br>
+						<br>&lt;/tfoot&gt;
+						<br>
+						<br>&lt;/tablet&gt;</p>
+					</div>
+					
+					<h2><li>&lt;colgroup&gt;</li></h2>
+					<p><b>Descripción: </b>Esta etiqueta es para agrupar dos o mas columnas de una tabla.</p>
+					<b>Ejemplo de uso:</b><br>
+					<div class="ejemplo">
+						<p>
+						<br>&lt;section&gt;
+						<br>
+						<br>&lt;article&gt;
+						<br>Contenido primer mensaje
+						<br>
+						<br>&lt;table&gt;
+						<br>&lt;caption&gt;
+						<br>Tabla de ejemplo
+						<br>&lt;/caption&gt;
+						<br>
+						<br>&lt;colgroup span="2"&gt;&lt;/colgroup&gt;
+						<br>&lt;tr&gt;
+						<br>&lt;td&gt;
+						<br>Primero
+						<br>&lt;/td&gt;
+						<br>&lt;td&gt;
+						<br>Segunda
+						<br>&lt;/td&gt;
+						<br>&lt;/tr&gt;
+						<br>&lt;/table&gt;
+						<br>
+						<br>
+						<br>&lt;/article&gt;
+						<br>
+						<br>&lt;/section&gt;</p>
+					</div>
+					
+				</article>	
+				
+				<article>
+					<header><h1>Etiquetas para crear un Formulario</h1></header>
+					
+					<h2><li>&lt;form&gt;</li></h2>
+					<p><b>Descripción: </b>Esta etiqueta es de apertura y cierre de un formulario de una página web. El resto de etiquetas del formulario deben ir siempre dentro de estas etiquetas de apertura y cierre de formulario.</p>
+					<b>Ejemplo de uso:</b><br>
+					<div class="ejemplo">
+						<p>
+						<br>&lt;section&gt;
+						<br>
+						<br>&lt;article&gt;
+						<br>Contenido primer mensaje
+						<br>
+						<br>&lt;form &gt;
+						<br>
+						<br>&lt;/form&gt;
+						<br>
+						<br>
+						<br>&lt;/article&gt;
+						<br>
+						<br>&lt;/section&gt;</p>
+					</div>
+					
+					<h2><li>&lt;fieldset&gt;</li></h2>
+					<p><b>Descripción: </b>Esta etiqueta representa un conjunto o agrupación de elementos de un formulario. Pinta un recuadro al rederor de las etiquetas que estén contenidas dentro del esta etiqueta.</p>
+					<b>Ejemplo de uso:</b><br>
+					<div class="ejemplo">
+						<p>
+						<br>&lt;section&gt;
+						<br>
+						<br>&lt;article&gt;
+						<br>Contenido primer mensaje
+						<br>
+						<br>&lt;form action="" method="post"&gt;
+						<br>&lt;fieldset&gt;
+						<br>&lt;legend&gt;Título&lt;/legend&gt;
+						<br>&lt;input type="radio" name="radio" id="radio"&gt; &lt;label for="radio"&gt; Click &lt;/label&gt;
+						<br>&lt;/fieldset&gt;
+						<br>&lt;/form&gt;
+						<br>
+						<br>&lt;/article&gt;
+						<br>
+						<br>&lt;/section&gt;</p>
+					</div>
+					
+					<h2><li>&lt;legend&gt;</li></h2>
+					<p><b>Descripción: </b>Esta etiqueta indica el título dentro de una etiqueta fieldset.</p>
+					<b>Ejemplo de uso:</b><br>
+					<div class="ejemplo">
+						<p>
+						<br>&lt;section&gt;
+						<br>
+						<br>&lt;article&gt;
+						<br>Contenido primer mensaje
+						<br>
+						<br>&lt;form action="" method="post"&gt;
+						<br>&lt;fieldset&gt;
+						<br>&lt;legend&gt;Título&lt;/legend&gt;
+						<br>&lt;input type="radio" name="radio" id="radio"&gt; &lt;label for="radio"&gt; Click &lt;/label&gt;
+						<br>&lt;/fieldset&gt;
+						<br>&lt;/form&gt;
+						<br>
+						<br>&lt;/article&gt;
+						<br>
+						<br>&lt;/section&gt;</p>
+					</div>
+					
+					<h2><li>&lt;label&gt;</li></h2>
+					<p><b>Descripción: </b>Esta etiqueta se usa para definir el nombre o titulo de un control del formulario.</p>
+					<b>Ejemplo de uso:</b><br>
+					<div class="ejemplo">
+						<p>
+						<br>&lt;section&gt;
+						<br>
+						<br>&lt;article&gt;
+						<br>Contenido primer mensaje
+						<br>
+						<br>&lt;form action="" method="post"&gt;
+						<br>&lt;fieldset&gt;
+						<br>&lt;legend&gt;Título&lt;/legend&gt;
+						<br>&lt;input type="radio" name="radio" id="radio"&gt; &lt;label for="radio"&gt; Click &lt;/label&gt;
+						<br>&lt;/fieldset&gt;
+						<br>&lt;/form&gt;
+						<br>
+						<br>&lt;/article&gt;
+						<br>
+						<br>&lt;/section&gt;</p>
+					</div>
+					
+					<h2><li>&lt;input&gt;</li></h2>
+					<p><b>Descripción: </b>Esta etiqueta pinta un campo de introducción de datos para el usuario. Es de las principales etiquetas de un formulaio.</p>
+					<b>Ejemplo de uso:</b><br>
+					<div class="ejemplo">
+						<p>
+						<br>&lt;section&gt;
+						<br>
+						<br>&lt;article&gt;
+						<br>Contenido primer mensaje
+						<br>
+						<br>&lt;form action="" method="post"&gt;
+						<br>&lt;fieldset&gt;
+						<br>&lt;legend&gt;Título&lt;/legend&gt;
+						<br>&lt;input type="radio" name="radio" id="radio"&gt; &lt;label for="radio"&gt; Click &lt;/label&gt;
+						<br>&lt;/fieldset&gt;
+						<br>&lt;/form&gt;
+						<br>
+						<br>&lt;/article&gt;
+						<br>
+						<br>&lt;/section&gt;</p>
+					</div>
+					
+					<h2><li>&lt;button&gt;</li></h2>
+					<p><b>Descripción: </b>Esta etiqueta es utilizada para representar un botón en el formulario.</p>
+					<b>Ejemplo de uso:</b><br>
+					<div class="ejemplo">
+						<p>
+						<br>&lt;section&gt;
+						<br>
+						<br>&lt;article&gt;
+						<br>Contenido primer mensaje
+						<br>
+						<br>&lt;form action="" method="post"&gt;
+						<br>&lt;fieldset&gt;
+						<br>&lt;legend&gt;Título&lt;/legend&gt;
+						<br>&lt;input type="radio" name="radio" id="radio"&gt; &lt;label for="radio"&gt; Click &lt;/label&gt;
+						<br>&lt;button name="button"&gt;Enviar&lt;/button&gt;
+						<br>&lt;/fieldset&gt;
+						<br>&lt;/form&gt;
+						<br>
+						<br>&lt;/article&gt;
+						<br>
+						<br>&lt;/section&gt;</p>
+					</div>
+					
+					<h2><li>&lt;select&gt;</li></h2>
+					<p><b>Descripción: </b>Esta etiqueta es un input que permite una selección entre un conjunto de opciones.</p>
+					<b>Ejemplo de uso:</b><br>
+					<div class="ejemplo">
+						<p>
+						<br>&lt;section&gt;
+						<br>
+						<br>&lt;article&gt;
+						<br>Contenido primer mensaje
+						<br>
+						<br>&lt;form action="" method="post"&gt;
+						<br>&lt;fieldset&gt;
+						<br>&lt;legend&gt;Título&lt;/legend&gt;
+						<br>&lt;select name="select" &gt; 
+						<br>&lt;option value="value1" &gt; Pimero&lt;/option&gt;
+						<br>&lt;option value="value2" selected&gt; Segunda&lt;/option&gt;
+						<br>&lt;option value="value3"&gt; Tercera&lt;/option&gt;
+						<br>&lt;/select&gt;
+						<br>&lt;button name="button"&gt;Enviar&lt;/button&gt;
+						<br>&lt;/fieldset&gt;
+						<br>&lt;/form&gt;
+						<br>
+						<br>&lt;/article&gt;
+						<br>
+						<br>&lt;/section&gt;</p>
+					</div>
+					
+						<h2><li>&lt;optgroup&gt;</li></h2>
+					<p><b>Descripción: </b>Esta etiqueta es un grupo de opciones en una caja de lista</p>
+					<b>Ejemplo de uso:</b><br>
+					<div class="ejemplo">
+						<p>
+						<br>&lt;section&gt;
+						<br>
+						<br>&lt;article&gt;
+						<br>Contenido primer mensaje
+						<br>
+						<br>&lt;form action="" method="post"&gt;
+						<br>&lt;fieldset&gt;
+						<br>&lt;legend&gt;Título&lt;/legend&gt;
+						<br>&lt;select name="select" &gt; 
+						<br>&lt;optgroup label="opcion 1" &gt; 
+						<br>&lt;option value="value1" &gt; Pimero&lt;/option&gt;
+						<br>&lt;option value="value2"&gt; Segunda&lt;/option&gt;
+						<br>&lt;option value="value3"&gt; Tercera&lt;/option&gt;
+						<br>&lt;/optgroup&gt; 
+						<br>&lt;optgroup label="opcion 2" &gt; 
+						<br>&lt;option value="value4" &gt; Nuevo&lt;/option&gt;
+						<br>&lt;option value="value5"&gt; Viejo&lt;/option&gt;
+						<br>&lt;option value="value6"&gt; Usado&lt;/option&gt;
+						<br>&lt;/optgroup&gt;
+						<br>&lt;/select&gt;
+						<br>&lt;button name="button"&gt;Enviar&lt;/button&gt;
+						<br>&lt;/fieldset&gt;
+						<br>&lt;/form&gt;
+						<br>
+						<br>&lt;/article&gt;
+						<br>
+						<br>&lt;/section&gt;</p>
+					</div>
+					
+					<h2><li>&lt;option&gt;</li></h2>
+					<p><b>Descripción: </b>Esta etiqueta permite añadir diferentes opciones al menu de la etiqueta select.</p>
+					<b>Ejemplo de uso:</b><br>
+					<div class="ejemplo">
+						<p>
+						<br>&lt;section&gt;
+						<br>
+						<br>&lt;article&gt;
+						<br>Contenido primer mensaje
+						<br>
+						<br>&lt;form action="" method="post"&gt;
+						<br>&lt;fieldset&gt;
+						<br>&lt;legend&gt;Título&lt;/legend&gt;
+						<br>&lt;select name="select" &gt; 
+						<br>&lt;option value="value1" &gt; Pimero&lt;/option&gt;
+						<br>&lt;option value="value2" selected&gt; Segunda&lt;/option&gt;
+						<br>&lt;option value="value3"&gt; Tercera&lt;/option&gt;
+						<br>&lt;button name="button"&gt;Enviar&lt;/button&gt;
+						<br>&lt;/select&gt;
+						<br>&lt;/fieldset&gt;
+						<br>&lt;/form&gt;
+						<br>
+						<br>&lt;/article&gt;
+						<br>
+						<br>&lt;/section&gt;</p>
+					</div>
+					
+					<h2><li>&lt;textarea&gt;</li></h2>
+					<p><b>Descripción: </b>Esta etiqueta añade un campo al usuario para que pueda introducir texto en unas lineas máximas de texto que el desarrollador puede definir.</p>
+					<b>Ejemplo de uso:</b><br>
+					<div class="ejemplo">
+						<p>
+						<br>&lt;section&gt;
+						<br>
+						<br>&lt;article&gt;
+						<br>Contenido primer mensaje
+						<br>
+						<br>&lt;form action="" method="post"&gt;
+						<br>&lt;fieldset&gt;
+						<br>&lt;legend&gt;Título&lt;/legend&gt;
+						<br>&lt;textarea name="textarea" rows="10" cols="50"&gt; Escribe aqui un comentario&lt;/textarea&gt;
+						<br>&lt;/fieldset&gt;
+						<br>&lt;/form&gt;
+						<br>
+						<br>&lt;/article&gt;
+						<br>
+						<br>&lt;/section&gt;</p>
+					</div>
+					
+					
+				</article>
+				
+				
+				<article>
+					<header><h1>Etiquetas para incrustar contenido</h1></header>
+					
+					<h2><li>&lt;img&gt;</li></h2>
+					<p><b>Descripción: </b>Esta etiqueta es para pintar una imagen en la página web.</p>
+					<b>Ejemplo de uso:</b><br>
+					<div class="ejemplo">
+						<p>
+						<br>&lt;section&gt;
+						<br>
+						<br>&lt;article&gt;
+						<br>Contenido primer mensaje
+						<br>
+						<br>&lt;img src="imagen.jpg"&gt;
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>&lt;/article&gt;
+						<br>
+						<br>&lt;/section&gt;</p>
+					</div>
+					
+					<h2><li>&lt;iframe&gt;</li></h2>
+					<p><b>Descripción: </b>Esta etiqueta sirve para anidar otro documento HTML dentro del docuemnto principal.</p>
+					<b>Ejemplo de uso:</b><br>
+					<div class="ejemplo">
+						<p>
+						<br>&lt;section&gt;
+						<br>
+						<br>&lt;article&gt;
+						<br>Contenido primer mensaje
+						<br>
+						<br>&lt;iframe width="560" height="315" src="https://youtu.be/VBoYEsJMtrU" allowfullscreen&gt;
+						<br>&lt;/iframe&gt;
+						<br>
+						<br>
+						<br>
+						<br>&lt;/article&gt;
+						<br>
+						<br>&lt;/section&gt;</p>
+					</div>
+					
+					<h2><li>&lt;embed&gt;</li></h2>
+					<p><b>Descripción: </b>Esta etiqueta sirve para integrar una aplicación o contenido interactivo externo que no suele ser HTML.</p>
+					<b>Ejemplo de uso:</b><br>
+					<div class="ejemplo">
+						<p>
+						<br>&lt;section&gt;
+						<br>
+						<br>&lt;article&gt;
+						<br>Contenido primer mensaje
+						<br>
+						<br>&lt;embed type="application/x-shockwave-flash" width="640" height="100" src="https://sites.google.com/site/htmldesdecero/archivos/Flashhtml5.swf" quality="high" title="Fall Nature Hikes"&gt;
+						<br>
+						<br>
+						<br>
+						<br>&lt;/article&gt;
+						<br>
+						<br>&lt;/section&gt;</p>
+					</div>
+					
+					<h2><li>&lt;object&gt;</li></h2>
+					<p><b>Descripción: </b>Esta etiqueta es utilizada para llamar a un recurso externo de la web. Este recurso sera tratado como una imagen, o un recurso externo para ser procesado por un plugin.</p>
+					<b>Ejemplo de uso:</b><br>
+					<div class="ejemplo">
+						<p>
+						<br>&lt;section&gt;
+						<br>
+						<br>&lt;article&gt;
+						<br>Contenido primer mensaje
+						<br>
+						<br>&lt;object type="application/pdf" width="250" height="200" data="/media/examples/In-CC0.pdf" &gt;
+						<br>&lt;/object&gt;
+						<br>
+						<br>
+						<br>&lt;/article&gt;
+						<br>
+						<br>&lt;/section&gt;</p>
+					</div>
+					
+					<h2><li>&lt;video&gt;</li></h2>
+					<p><b>Descripción: </b>Esta etiqueta es utilizada para reproducir video en la página web junto a sus archivos de audio y capciones asociadas.</p>
+					<b>Ejemplo de uso:</b><br>
+					<div class="ejemplo">
+						<p>
+						<br>&lt;section&gt;
+						<br>
+						<br>&lt;article&gt;
+						<br>Contenido primer mensaje
+						<br>
+						<br>&lt;video src="videofile.ogg" autoplay poster="posterimage.jpg"&gt;
+						<br>Tu navegador no admite el elemento &lt;code&gt;video&lt;/code&gt;.
+						<br>&lt;/video&gt;
+						<br>
+						<br>
+						<br>&lt;/article&gt;
+						<br>
+						<br>&lt;/section&gt;</p>
+					</div>
+					
+					<h2><li>&lt;img&gt;</li></h2>
+					<p><b>Descripción: </b>Esta etiqueta es para pintar una imagen en la página web.</p>
+					<b>Ejemplo de uso:</b><br>
+					<div class="ejemplo">
+						<p>
+						<br>&lt;section&gt;
+						<br>
+						<br>&lt;article&gt;
+						<br>Contenido primer mensaje
+						<br>
+						<br>&lt;img src="imagen.jpg"&gt;
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>&lt;/article&gt;
+						<br>
+						<br>&lt;/section&gt;</p>
+					</div>
+					
+					<h2><li>&lt;audio&gt;</li></h2>
+					<p><b>Descripción: </b>Esta etiqueta es utilizada para cargar a una web un archivo de audio o stream de audio.</p>
+					<b>Ejemplo de uso:</b><br>
+					<div class="ejemplo">
+						<p>
+						<br>&lt;section&gt;
+						<br>
+						<br>&lt;article&gt;
+						<br>Contenido primer mensaje
+						<br>
+						<br>&lt;audio src="audiotest_(1).ogg" autoplay&gt;
+						<br>Tu navegador no admite el elemento &lt;code&gt;audio&lt;/code&gt;.
+						<br>&lt;/audio&gt;
+						<br>
+						<br>
+						<br>&lt;/article&gt;
+						<br>
+						<br>&lt;/section&gt;</p>
+					</div>
+					
+					<h2><li>&lt;source&gt;</li></h2>
+					<p><b>Descripción: </b>Esta etiqueta se utiliza como elemento hijo de los elementos multimedias de &lt;video&gt; y &lt;audio&gt;. Le permite especificar pistas de texto cronometradas (o datos basados en el tiempo), por ejemplo, para manejar subtítulos automáticamente.</p>
+					<b>Ejemplo de uso:</b><br>
+					<div class="ejemplo">
+						<p>
+						<br>&lt;section&gt;
+						<br>
+						<br>&lt;article&gt;
+						<br>Contenido primer mensaje
+						<br>
+						<br>&lt;video controls src="/media/cc0-videos/friday.mp4"&gt;
+						<br>&lt;track default kind="captions" srclang="en" src="/media/examples/friday.vtt&gt;
+						<br>or &lt;a href="/media/cc0-videos/friday.mp4"&gt;MP4&lt;/a&gt;
+						<br>or &lt;a href="/media/examples/friday.vtt"&gt;Subtitulo&lt;/a&gt;
+						<br>&lt;/video&gt;
+						<br>
+						<br>
+						<br>&lt;/article&gt;
+						<br>
+						<br>&lt;/section&gt;</p>
+					</div>
+					
+					<h2><li>&lt;track&gt;</li></h2>
+					<p><b>Descripción: </b>Esta etiqueta permite autores especificar recursos multimedia alternativos para las etiquetas de &lt;video&gt; y &lt;audio&gt;.</p>
+					<b>Ejemplo de uso:</b><br>
+					<div class="ejemplo">
+						<p>
+						<br>&lt;section&gt;
+						<br>
+						<br>&lt;article&gt;
+						<br>Contenido primer mensaje
+						<br>
+						<br>&lt;video controls width="250" height="200" muted&gt;
+						<br>&lt;source src="/media/cc0-videos/flower.webm" type="video/webm"&gt;
+						<br>&lt;source src="/media/cc0-videos/flower.mp4" type="video/mp4"&gt;
+						<br>Download the
+						<br>&lt;a href="/media/cc0-videos/flower.webm"&gt;WEBM&lt;/a&gt;
+						<br>or &lt;a href="/media/cc0-videos/flower.mp4"&gt;MP4&lt;/a&gt;
+						<br>&lt;/video&gt;
+						<br>
+						<br>
+						<br>&lt;/article&gt;
+						<br>
+						<br>&lt;/section&gt;</p>
+					</div>
+					
+					<h2><li>&lt;svg&gt;</li></h2>
+					<p><b>Descripción: </b>Esta etiqueta se usa para llamar a una imagen vectorizada.</p>
+					<b>Ejemplo de uso:</b><br>
+					<div class="ejemplo">
+						<p>
+						<br>&lt;section&gt;
+						<br>
+						<br>&lt;article&gt;
+						<br>Contenido primer mensaje
+						<br>
+						<br>&lt;svg width="100" height="100"&gt;
+						<br>&lt;circle cx="50" cy="50" r="40" stroke="green" stroke-width="4" fill="yellow" /&gt;
+						<br>&lt;/svg&gt;
+						<br>
+						<br>
+						<br>&lt;/article&gt;
+						<br>
+						<br>&lt;/section&gt;</p>
+					</div>
+					
+					
+					
+				</article>
+				
+				
+				</ol>	
+			
+			</section>	
+			
+			</div>
+			<footer>
+				<p><small>Copyrignt © 2023 by Scarlet Falette Peralta</small></p>
+
+			</footer>
+		</body>
+
+
+
+
+
+
+
+	</html>
