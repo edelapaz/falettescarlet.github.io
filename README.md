@@ -61,11 +61,11 @@
 
             <nav class="nav-menu">
                 <ul style="list-style: none;">
-                    <li><a href="/pratica1.html" title="Prática 1">
-                            Prática 1
+                    <li><a href="/practica1.html" title="Práctica 1">
+                            Práctica 1
                         </a></li>
-                    <li><a href="/pratica2.html" title="Prática 2">
-                            Prática 2
+                    <li><a href="/practica2.html" title="Práctica 2">
+                            Práctica 2
                         </a></li>
                 </ul>
             </nav>
