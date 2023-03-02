@@ -1,7 +1,7 @@
 <html>
 
 <head>
-    <title>Biografia de Scarlet Falette</title>
+    <title>Scarlet Falette</title>
     <style type="text/css">
         body {
             margin: 0;
@@ -56,9 +56,12 @@
 
 <body>
     <div class="contenido">
-
+        <header>
+            <h1>Scarlet Rabel Falette Peralta</h1>
+            <h2>Matrícula: 100336643 </h2>
+        </header>
         <main>
-
+            
             <nav class="nav-menu">
                 <ul style="list-style: none;">
                     <li><a href="/practica1.html" title="Práctica 1">
@@ -67,11 +70,14 @@
                     <li><a href="/practica2.html" title="Práctica 2">
                             Práctica 2
                         </a></li>
+                    <li><a href="/practica3.html" title="Práctica 3">
+                            Práctica 3
+                    </a></li>
                 </ul>
             </nav>
         </main>
         <footer>
-            <p>Copyrignt © 2023 Biografía de Scarlet Falette</p>
+            <p>Copyrignt © 2023 Scarlet Falette</p>
         </footer>
     </div>
 </body>
