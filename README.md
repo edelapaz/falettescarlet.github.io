@@ -56,10 +56,6 @@
 
 <body>
     <div class="contenido">
-        <header>
-            <h1>Scarlet Rabel Falette Peralta</h1>
-            <h2>Matrícula: 100336643 </h2>
-        </header>
         <main>
             
             <nav class="nav-menu">
