@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2e1296fd-1c18-46bc-9074-97ab7939d092" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/estilo.css" beforeDir="false" afterPath="$PROJECT_DIR$/estilo.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/practica3.html" beforeDir="false" afterPath="$PROJECT_DIR$/practica3.html" afterDir="false" />
-    </list>
+    <list default="true" id="2e1296fd-1c18-46bc-9074-97ab7939d092" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -46,7 +43,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1677703182380</updated>
-      <workItem from="1677703186820" duration="10061000" />
+      <workItem from="1677703186820" duration="10850000" />
     </task>
     <servers />
   </component>
